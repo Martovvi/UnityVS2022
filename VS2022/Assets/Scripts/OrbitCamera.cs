@@ -53,6 +53,18 @@ public class OrbitCamera : MonoBehaviour
 
     void LateUpdate()
     {
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+        else if (Input.GetMouseButtonUp(1))
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
+
         if(target)
         {
             distance = Mathf.Clamp(distance - Input.GetAxis("Mouse ScrollWheel") * 5, minDistance, maxDistance);
@@ -64,6 +76,7 @@ public class OrbitCamera : MonoBehaviour
         {
             x += Input.GetAxis("Mouse X") * xSpeed * 0.02f;
             y -= Input.GetAxis("Mouse Y") * ySpeed * 0.02f;
+            Cursor.visible = false;
         }
 
         xSmooth = Mathf.SmoothDamp(xSmooth, x, ref xVelocity, smoothTime);

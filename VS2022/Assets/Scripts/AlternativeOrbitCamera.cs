@@ -54,9 +54,17 @@ public class AlternativeOrbitCamera : MonoBehaviour
         */
 
         if (Input.GetMouseButtonDown(1))
+        {
             orbitable = true;
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
         else if (Input.GetMouseButtonUp(1))
+        {
             orbitable = false;
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
 
         if (orbitable)
         {

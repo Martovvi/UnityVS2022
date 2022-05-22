@@ -258,7 +258,7 @@ MonoBehaviour:
   distance: 10
   xSpeed: 250
   ySpeed: 120
-  yMinLimit: -20
+  yMinLimit: 1
   yMaxLimit: 80
   smoothTime: 0.2
   zoomDamp: 0.1
