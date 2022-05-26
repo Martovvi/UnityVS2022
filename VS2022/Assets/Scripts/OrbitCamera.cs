@@ -5,35 +5,24 @@ using UnityEngine;
 [AddComponentMenu("Camera-Control/Mouse Orbit with zoom")]
 public class OrbitCamera : MonoBehaviour
 {
-    public Transform target;
-    public float distance = 10.0f;
 
-    public float xSpeed = 250f;
-    public float ySpeed = 120;
+    public Transform target;
+    public float distance = 5.0f;
+    public float xSpeed = 25.0f;
+    public float ySpeed = 50.0f;
 
     public float yMinLimit = -20f;
-    public float yMaxLimit = 80;
+    public float yMaxLimit = 80f;
 
-    private float x = 0f;
-    private float y = 0f;
-
-    public float smoothTime = 0.3f;
-    public float zoomDamp = 2f;
-
-    private float xSmooth = 0f;
-    private float ySmooth = 0f;
-    private float distanceSmooth = 23.0f;
-
-    private float xVelocity = 0f;
-    private float yVelocity = 0f;
-    private float smoothVelocity = 0f;
-
-    public float minDistance = 9f;
-    public float maxDistance = 10f;
-
-    private Vector3 posSmooth = Vector3.zero;
+    public float distanceMin = .5f;
+    public float distanceMax = 15f;
 
     private Rigidbody rbody;
+
+    float x = 0.0f;
+    float y = 0.0f;
+
+    bool orbitable;
 
     // Use this for initialization
     void Start()
@@ -53,41 +42,55 @@ public class OrbitCamera : MonoBehaviour
 
     void LateUpdate()
     {
+        /*
+        if (Input.GetKeyDown(KeyCode.LeftControl) == true)
+        {
+            orbitable = true;
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftControl) == true)
+        {
+            orbitable = false;
+        }
+        */
 
         if (Input.GetMouseButtonDown(1))
         {
+            orbitable = true;
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
         }
         else if (Input.GetMouseButtonUp(1))
         {
+            orbitable = false;
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
         }
 
-        if(target)
+        if (orbitable)
         {
-            distance = Mathf.Clamp(distance - Input.GetAxis("Mouse ScrollWheel") * 5, minDistance, maxDistance);
-            distanceSmooth = Mathf.SmoothDamp(distanceSmooth, distance, ref smoothVelocity, zoomDamp);
+            if (target)
+            {
+                x += Input.GetAxis("Mouse X") * xSpeed * distance * 0.02f;
+                y -= Input.GetAxis("Mouse Y") * ySpeed * 0.02f;
 
+                y = ClampAngle(y, yMinLimit, yMaxLimit);
+
+                Quaternion rotation = Quaternion.Euler(y, x, 0);
+
+                distance = Mathf.Clamp(distance - Input.GetAxis("Mouse ScrollWheel") * 5, distanceMin, distanceMax);
+
+                RaycastHit hit;
+                if (Physics.Linecast(target.position, transform.position, out hit))
+                {
+                    distance -= hit.distance;
+                }
+                Vector3 negDistance = new Vector3(0.0f, 0.0f, -distance);
+                Vector3 position = rotation * negDistance + target.position;
+
+                transform.rotation = rotation;
+                transform.position = position;
+            }
         }
-
-        if (Input.GetMouseButton(1))
-        {
-            x += Input.GetAxis("Mouse X") * xSpeed * 0.02f;
-            y -= Input.GetAxis("Mouse Y") * ySpeed * 0.02f;
-            Cursor.visible = false;
-        }
-
-        xSmooth = Mathf.SmoothDamp(xSmooth, x, ref xVelocity, smoothTime);
-        ySmooth = Mathf.SmoothDamp(ySmooth, y, ref yVelocity, smoothTime);
-
-        ySmooth = ClampAngle(ySmooth, yMinLimit, yMaxLimit);
-
-        var rotation = Quaternion.Euler(ySmooth, xSmooth, 0);
-
-        transform.rotation = rotation;
-        transform.position = rotation * new Vector3(0, 0, -distanceSmooth) + posSmooth;
     }
 
     public static float ClampAngle(float angle, float min, float max)
