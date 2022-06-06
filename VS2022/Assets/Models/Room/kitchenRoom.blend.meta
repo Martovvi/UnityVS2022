@@ -17,6 +17,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: CelingLampMaterial
+    second: {fileID: 2100000, guid: 5a95026493bc8934c832f7fba40f1d11, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: CookerHoodMaterial
     second: {fileID: 2100000, guid: 35d62161d407eed4cbd090481913ef7c, type: 2}
   - first:
@@ -32,6 +37,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: EmissionMaterial
+    second: {fileID: 2100000, guid: a79ccc70dc2e8dd4eb3cada38efab552, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: GlassMaterial
     second: {fileID: 2100000, guid: ab40b0b1b7dfa0542bb9cd5ebe5e5d8a, type: 2}
   - first:
@@ -39,6 +49,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: HandleMaterial
     second: {fileID: 2100000, guid: d9c29bfe748d76e4b87e5a8650c1056b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HotplateMaterial
+    second: {fileID: 2100000, guid: f6ef49f1398a02446b6cb298b6d08497, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -74,6 +89,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: SinkMaterial
     second: {fileID: 2100000, guid: 6962ebca6e5a18543ab4737170d45807, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SmallLightMaterial
+    second: {fileID: 2100000, guid: be9a0b91b9e5ba644a489748d94779a4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
