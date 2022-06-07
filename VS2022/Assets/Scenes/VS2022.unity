@@ -2344,7 +2344,8 @@ GameObject:
   - component: {fileID: 1967253947882594093}
   - component: {fileID: 8107968920837232506}
   - component: {fileID: 687755060089501797}
-  m_Layer: 0
+  - component: {fileID: 8107968920837232507}
+  m_Layer: 6
   m_Name: PotStill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3496,6 +3497,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2774721611890493739}
   m_Mesh: {fileID: 8950026073788929868, guid: 0b4c6c28be9a0664883bf880a726f0e7, type: 3}
+--- !u!114 &8107968920837232507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2774721611890493739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57b414ee6f1b65e42965beb9734673cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8163447590124619159
 GameObject:
   m_ObjectHideFlags: 0
