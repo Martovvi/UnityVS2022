@@ -1309,6 +1309,7 @@ GameObject:
   - component: {fileID: 354491692}
   - component: {fileID: 354491691}
   - component: {fileID: 354491690}
+  - component: {fileID: 354491694}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -1403,6 +1404,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &354491694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354491689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d24f1e587b4fdd4d8f009259f9f8406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instructionLabel: {fileID: 2039359347}
+  errorLabel: {fileID: 658661218}
+  helpLabel: {fileID: 367571614}
+  errorCountLabel: {fileID: 13412163}
+  helpCountLabel: {fileID: 612916580}
+  helpDisplayTime: 5
+  errorDisplayTime: 5
 --- !u!1001 &359522943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3063,6 +3083,142 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46a452efdc3f0b94d9ddaa7993e9b2a2, type: 3}
+--- !u!1 &658661215
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 658661216}
+  - component: {fileID: 658661217}
+  - component: {fileID: 658661218}
+  m_Layer: 5
+  m_Name: ErrorText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &658661216
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658661215}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2061135758}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 173, y: -5}
+  m_SizeDelta: {x: 70, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &658661217
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658661215}
+  m_CullTransparentMesh: 1
+--- !u!114 &658661218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658661215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 6effdcf4eb8100c4785b5a04732a6194, type: 2}
+  m_sharedMaterial: {fileID: -4487387355241936975, guid: 6effdcf4eb8100c4785b5a04732a6194,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 50
+  m_fontSizeBase: 50
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &709953485
 GameObject:
   m_ObjectHideFlags: 0
@@ -7917,6 +8073,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 13412162}
+  - {fileID: 658661216}
   m_Father: {fileID: 354491693}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9361,6 +9518,264 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5253891697921301807}
   m_Mesh: {fileID: -7629140602402867997, guid: 6ca7aa1231c635a47b62c5f56eedd146, type: 3}
+--- !u!4 &2974967268721324876
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2974967268721324878}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -84.717606, y: -104.94583, z: -542.6875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 83
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2974967268721324878
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2974967268721324876}
+  - component: {fileID: 2974967268721324879}
+  m_Layer: 0
+  m_Name: InteractionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2974967268721324879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2974967268721324878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8646dfa5120adab44a7fd48bd7edd198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ui: {fileID: 354491694}
+  interactions:
+  - Interactable: {fileID: 8941860718582572987}
+    Instruction: Gib das Wasser in den Maischeeimer
+    HelpMsg: 
+    ErrorMsg: 
+    Duration: 0
+    OnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    OnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - Interactable: {fileID: 6704808176904391605}
+    Instruction: "F\xFClle den Zucker in den Eimer"
+    HelpMsg: 
+    ErrorMsg: 
+    Duration: 0
+    OnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    OnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - Interactable: {fileID: 8654858001566675679}
+    Instruction: Gib die Hefe hinzu
+    HelpMsg: 
+    ErrorMsg: 
+    Duration: 0
+    OnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    OnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - Interactable: {fileID: 6438018260590922523}
+    Instruction: "Verschlie\xDFe den Eimer"
+    HelpMsg: 
+    ErrorMsg: 
+    Duration: 0
+    OnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    OnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - Interactable: {fileID: 4222036285929136058}
+    Instruction: "Lass das Ganze g\xE4ren"
+    HelpMsg: 
+    ErrorMsg: 
+    Duration: 0
+    OnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    OnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - Interactable: {fileID: 8107968920837232507}
+    Instruction: "Setze die Brennblase auf den St\xE4nder"
+    HelpMsg: 
+    ErrorMsg: 
+    Duration: 0
+    OnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    OnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - Interactable: {fileID: 4222036285929136058}
+    Instruction: "F\xFClle die Maische in die Brennblase"
+    HelpMsg: 
+    ErrorMsg: 
+    Duration: 0
+    OnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    OnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - Interactable: {fileID: 9077778274087009500}
+    Instruction: "Verschlie\xDFe die Brennblase mit dem Helm"
+    HelpMsg: 
+    ErrorMsg: 
+    Duration: 0
+    OnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    OnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - Interactable: {fileID: 8923763999356925608}
+    Instruction: "Stelle den K\xFChler auf"
+    HelpMsg: 
+    ErrorMsg: 
+    Duration: 0
+    OnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    OnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - Interactable: {fileID: 8273802254154211868}
+    Instruction: Verschraube die Zufuhr
+    HelpMsg: 
+    ErrorMsg: 
+    Duration: 0
+    OnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    OnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - Interactable: {fileID: 8047490994182453450}
+    Instruction: Bringe die Wasserableitung an
+    HelpMsg: 
+    ErrorMsg: 
+    Duration: 0
+    OnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    OnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - Interactable: {fileID: 8811592841478858417}
+    Instruction: Bringe die Wasserzuleitung an
+    HelpMsg: 
+    ErrorMsg: 
+    Duration: 0
+    OnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    OnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - Interactable: {fileID: 8481868002061159329}
+    Instruction: Stelle den Brenner auf
+    HelpMsg: 
+    ErrorMsg: 
+    Duration: 0
+    OnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    OnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - Interactable: {fileID: 8481868002061159329}
+    Instruction: "Entz\xFCnde den Brenner"
+    HelpMsg: 
+    ErrorMsg: 
+    Duration: 0
+    OnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    OnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - Interactable: {fileID: 6765147698628953338}
+    Instruction: Stelle die Wasserpumpe an
+    HelpMsg: 
+    ErrorMsg: 
+    Duration: 0
+    OnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    OnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - Interactable: {fileID: 6886713078011628611}
+    Instruction: "Stelle den Auffangbeh\xE4lter auf"
+    HelpMsg: 
+    ErrorMsg: 
+    Duration: 0
+    OnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    OnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - Interactable: {fileID: 6886713078011628611}
+    Instruction: Warte einige Minuten
+    HelpMsg: 
+    ErrorMsg: 
+    Duration: 0
+    OnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    OnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - Interactable: {fileID: 6886713078011628611}
+    Instruction: "Gie\xDFe den Vorlauf ab"
+    HelpMsg: 
+    ErrorMsg: 
+    Duration: 0
+    OnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    OnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - Interactable: {fileID: 6886713078011628611}
+    Instruction: "Warte erneut f\xFCr ein paar Stunden"
+    HelpMsg: 
+    ErrorMsg: 
+    Duration: 0
+    OnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    OnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  OnCompleted:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2982757055439859870
 GameObject:
   m_ObjectHideFlags: 0
@@ -10032,6 +10447,8 @@ GameObject:
   - component: {fileID: 2819411366304648109}
   - component: {fileID: 5045405116752752081}
   - component: {fileID: 6438018260590922521}
+  - component: {fileID: 6438018260590922523}
+  - component: {fileID: 6438018260590922522}
   m_Layer: 0
   m_Name: Cap
   m_TagString: Untagged
@@ -10524,7 +10941,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4947702745490527867}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -10559,6 +10976,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6438018260590922522
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4947702745490527867}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3365645382605875686, guid: 00fdac989a7c2af41a40555443cb7777, type: 3}
+--- !u!114 &6438018260590922523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4947702745490527867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57b414ee6f1b65e42965beb9734673cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &6474569424012491101
 MeshRenderer:
   m_ObjectHideFlags: 0
