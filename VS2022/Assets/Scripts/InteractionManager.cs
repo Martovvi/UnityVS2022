@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Events;
 
 public class InteractionManager : MonoBehaviour, IInteractionListener
 {
-    // ToDo: Add Invoke actions
     [SerializeField] private InteractionUI ui;
+    [SerializeField] private Button helpButton;
     [SerializeField] private List<Interaction> interactions;
     [SerializeField] private UnityEvent OnCompleted;
 
@@ -16,6 +17,10 @@ public class InteractionManager : MonoBehaviour, IInteractionListener
     private bool interactionInProgress;
     private int errorCount;
     private int helpCount;
+    private int interactionStepError = -1;
+    private int interactionStepHelp = -1;
+    private int stepCount;
+    
 
     private void Start()
     {
@@ -26,18 +31,23 @@ public class InteractionManager : MonoBehaviour, IInteractionListener
         }
 
         currentInteraction = interactions[interactionIndex];
-        ui.DisplayInstruction(currentInteraction.Instruction);
+        stepCount = interactions.Count;
+        ui.DisplayInstruction("Schritt " + (interactionIndex + 1) + " / " + stepCount + " " + currentInteraction.Instruction);
+        helpButton.onClick.AddListener(showHelpMsg);
     }
 
-    private void Update()
-    {
-        // Users can request help with the H key as long as we still have "open" interactions (the training is not completed).
-        if (Input.GetKeyDown(KeyCode.H) && !InteractionsCompleted)
+     void showHelpMsg()
         {
-            helpCount++;
-            ui.DisplayHelp(currentInteraction.HelpMsg, helpCount);
-        }
-    }
+            if (!InteractionsCompleted)
+            {
+               if(interactionIndex != interactionStepHelp)
+               {
+                  helpCount++;
+                  interactionStepHelp = interactionIndex;
+               }
+               ui.DisplayHelp(currentInteraction.HelpMsg, helpCount);
+            }
+        }    
 
     private void OnEnable()
     {
@@ -74,7 +84,11 @@ public class InteractionManager : MonoBehaviour, IInteractionListener
         }
         else
         {
-            ui.DisplayError(currentInteraction.ErrorMsg, ++errorCount);
+            if (interactionIndex != interactionStepError)
+            {
+                ui.DisplayError(currentInteraction.ErrorMsg, ++errorCount);
+                interactionStepError = interactionIndex;
+            }
         }
     }
 
@@ -90,7 +104,8 @@ public class InteractionManager : MonoBehaviour, IInteractionListener
         if (interactionIndex < interactions.Count)
         {
             currentInteraction = interactions[interactionIndex];
-            ui.DisplayInstruction(currentInteraction.Instruction);
+            // ToDo
+            ui.DisplayInstruction("Schritt " + (interactionIndex + 1) + " / " + stepCount + " " + currentInteraction.Instruction);
         }
         else
         {
