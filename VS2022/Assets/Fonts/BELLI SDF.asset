@@ -117,9 +117,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: BELLI SDF
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: -2053824097
   material: {fileID: -4718279432365349057}
-  materialHashCode: 0
+  materialHashCode: 515552991
   m_Version: 1.1.0
   m_SourceFontFileGUID: 1a25ca644ad724d4a873ecae54d21635
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 1a25ca644ad724d4a873ecae54d21635,
