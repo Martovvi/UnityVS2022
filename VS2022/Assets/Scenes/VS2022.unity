@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.938
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1611810636}
-  m_IndirectSpecularColor: {r: 0.23498672, g: 0.13866077, b: 0.11115168, a: 0.938}
+  m_IndirectSpecularColor: {r: 0.23498704, g: 0.13866128, b: 0.111152105, a: 0.938}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7231,7 +7231,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -14395,7 +14395,7 @@ GameObject:
   - component: {fileID: 4222036285929136057}
   - component: {fileID: 4222036285929136060}
   m_Layer: 0
-  m_Name: mashBucket
+  m_Name: MashBucket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14705,13 +14705,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4947702745490527867}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.000000057761557, y: -0.29499993, z: -0.15999989}
-  m_LocalScale: {x: 1.0000004, y: 0.99999976, z: 0.99999976}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 0.25100005, y: 0.9005949, z: -0.2355871}
+  m_LocalScale: {x: 1.0319089, y: 1.0319082, z: 1.0319082}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3088488018831631575}
-  m_RootOrder: 0
+  m_Father: {fileID: 5250192253562658141}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2833370456667265210
 GameObject:
@@ -14912,6 +14912,29 @@ MonoBehaviour:
     OnEnd:
       m_PersistentCalls:
         m_Calls: []
+  - Interactable: {fileID: 6438018260590922523}
+    Instruction: Entferne den Verschluss vom Maischeimer
+    HelpMsg: 
+    ErrorMsg: 
+    Duration: 0
+    OnStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6438018260590922525}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Move CapBack
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnEnd:
+      m_PersistentCalls:
+        m_Calls: []
   - Interactable: {fileID: 4222036285929136058}
     Instruction: "F\xFClle die Maische in die Brennblase"
     HelpMsg: 
@@ -14919,7 +14942,19 @@ MonoBehaviour:
     Duration: 0
     OnStart:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 4222036285929136060}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Move MashBucket
+            m_BoolArgument: 0
+          m_CallState: 2
     OnEnd:
       m_PersistentCalls:
         m_Calls: []
@@ -15069,6 +15104,18 @@ MonoBehaviour:
             m_StringArgument: Move Lighter
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 8481868002061159333}
+          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+          m_MethodName: set_enabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
     OnEnd:
       m_PersistentCalls:
         m_Calls: []
@@ -15106,7 +15153,7 @@ MonoBehaviour:
     OnEnd:
       m_PersistentCalls:
         m_Calls: []
-  - Interactable: {fileID: 6886713078011628611}
+  - Interactable: {fileID: 2505301847367286866}
     Instruction: Warte einige Minuten
     HelpMsg: 
     ErrorMsg: 
@@ -15124,11 +15171,23 @@ MonoBehaviour:
     Duration: 0
     OnStart:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 6886713078011628613}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Empty Cup
+            m_BoolArgument: 0
+          m_CallState: 2
     OnEnd:
       m_PersistentCalls:
         m_Calls: []
-  - Interactable: {fileID: 6886713078011628611}
+  - Interactable: {fileID: 2505301847367286866}
     Instruction: "Warte erneut f\xFCr ein paar Stunden"
     HelpMsg: 
     ErrorMsg: 
@@ -15189,11 +15248,10 @@ Transform:
   m_LocalPosition: {x: 0.251, y: 1.0657, z: -0.54}
   m_LocalScale: {x: 1.0319085, y: 1.0319085, z: 1.0319085}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2819411366304648109}
+  m_Children: []
   m_Father: {fileID: 5250192253562658141}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
 --- !u!33 &3224134318008429695
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -15217,6 +15275,7 @@ GameObject:
   - component: {fileID: 8481868002061159330}
   - component: {fileID: 8481868002061159331}
   - component: {fileID: 8481868002061159332}
+  - component: {fileID: 8481868002061159333}
   m_Layer: 0
   m_Name: Burner
   m_TagString: Untagged
@@ -15409,7 +15468,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5250192253562658141}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4132148813984609058
 GameObject:
@@ -15437,13 +15496,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6886713078011628609}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 7.13, y: -0.29, z: -4.13}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 5.01, y: 0.128, z: -3.246}
+  m_LocalScale: {x: 3.7842, y: 3.7842, z: 1.1280257}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 543450653249020858}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
 --- !u!23 &4222036285929136056
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16025,6 +16084,7 @@ Transform:
   m_Children:
   - {fileID: 1543403528368295914}
   - {fileID: 1486317820517208283}
+  - {fileID: 2819411366304648109}
   - {fileID: 8654858001566675677}
   - {fileID: 3088488018831631575}
   - {fileID: 6781689196340951403}
@@ -16237,8 +16297,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5250192253562658141}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 92.896}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: -118.49459, y: -29.273628, z: 122.16963}
 --- !u!33 &5756634867498437009
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -16543,7 +16603,7 @@ Transform:
   - {fileID: 8811592841478858415}
   - {fileID: 2445794108524391641}
   m_Father: {fileID: 5250192253562658141}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &6539074321710768517
 MeshRenderer:
@@ -16819,7 +16879,7 @@ Transform:
   m_Children:
   - {fileID: 5515954563613216463}
   m_Father: {fileID: 5250192253562658141}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6819690941890099076
 Transform:
@@ -16922,10 +16982,10 @@ GameObject:
   - component: {fileID: 4151436659617994341}
   - component: {fileID: 3513031815565240940}
   - component: {fileID: 1348853085766303173}
-  - component: {fileID: 6886713078011628610}
   - component: {fileID: 6886713078011628611}
   - component: {fileID: 6886713078011628612}
   - component: {fileID: 6886713078011628613}
+  - component: {fileID: 6886713078011628614}
   m_Layer: 0
   m_Name: Cup
   m_TagString: Untagged
@@ -16933,20 +16993,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!136 &6886713078011628610
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6886713078011628609}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.20785691
-  m_Height: 0.41571388
-  m_Direction: 1
-  m_Center: {x: -2.6246438, y: -1.0586962, z: 0.4291825}
 --- !u!114 &6886713078011628611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16992,6 +17038,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!136 &6886713078011628614
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6886713078011628609}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.17667057
+  m_Height: 0.35334095
+  m_Direction: 1
+  m_Center: {x: -0.0000014305117, y: 0.00000005960465, z: 0.0005090683}
 --- !u!1 &6964342181993611344
 GameObject:
   m_ObjectHideFlags: 0
@@ -17800,6 +17860,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8481868002061159333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3308170875951189699}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 246209e0370b58e4a9b40abfe9e0e741, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 1.25
+  particle: {fileID: 1787022317}
 --- !u!1 &8600765185404337411
 GameObject:
   m_ObjectHideFlags: 0
@@ -17835,8 +17909,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5250192253562658141}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: -21.084602, y: 84.13859, z: -84.12456}
 --- !u!114 &8654858001566675679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18226,7 +18300,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5250192253562658141}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
 --- !u!64 &8941860718582572986
 MeshCollider:
