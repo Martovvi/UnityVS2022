@@ -10,6 +10,9 @@ public class InteractionManager : MonoBehaviour, IInteractionListener
     [SerializeField] private Button helpButton;
     [SerializeField] private List<Interaction> interactions;
     [SerializeField] private UnityEvent OnCompleted;
+    [SerializeField] private AudioSource wrongSound;
+    [SerializeField] private AudioSource correctSound;
+    [SerializeField] private AudioSource notificationSound;
 
     public bool InteractionsCompleted => interactionIndex >= interactions.Count;
     private int interactionIndex;
@@ -46,6 +49,7 @@ public class InteractionManager : MonoBehaviour, IInteractionListener
                   interactionStepHelp = interactionIndex;
                }
                ui.DisplayHelp(currentInteraction.HelpMsg, helpCount);
+               notificationSound.Play();
             }
         }    
 
@@ -88,6 +92,7 @@ public class InteractionManager : MonoBehaviour, IInteractionListener
             {
                 ui.DisplayError(currentInteraction.ErrorMsg, ++errorCount);
                 interactionStepError = interactionIndex;
+                wrongSound.Play();
             }
         }
     }
@@ -100,6 +105,7 @@ public class InteractionManager : MonoBehaviour, IInteractionListener
         yield return new WaitForSeconds(currentInteraction.Duration);
         currentInteraction.OnEnd?.Invoke();
         interactionIndex++;
+        correctSound.Play();
 
         if (interactionIndex < interactions.Count)
         {
