@@ -15208,7 +15208,7 @@ MonoBehaviour:
     Instruction: Gib das Wasser in den Maischeeimer
     HelpMsg: 1
     ErrorMsg: 
-    Duration: 0
+    Duration: 3.5
     OnStart:
       m_PersistentCalls:
         m_Calls:
@@ -15231,7 +15231,7 @@ MonoBehaviour:
     Instruction: "F\xFClle den Zucker in den Eimer"
     HelpMsg: 2
     ErrorMsg: 
-    Duration: 0
+    Duration: 4
     OnStart:
       m_PersistentCalls:
         m_Calls:
@@ -15254,7 +15254,7 @@ MonoBehaviour:
     Instruction: Gib die Hefe hinzu
     HelpMsg: 3
     ErrorMsg: 
-    Duration: 0
+    Duration: 4
     OnStart:
       m_PersistentCalls:
         m_Calls:
@@ -15277,7 +15277,7 @@ MonoBehaviour:
     Instruction: "Verschlie\xDFe den Eimer"
     HelpMsg: 4
     ErrorMsg: 
-    Duration: 0
+    Duration: 1.2
     OnStart:
       m_PersistentCalls:
         m_Calls:
@@ -15311,7 +15311,7 @@ MonoBehaviour:
     Instruction: "Setze die Brennblase auf den St\xE4nder"
     HelpMsg: 
     ErrorMsg: 
-    Duration: 0
+    Duration: 1.5
     OnStart:
       m_PersistentCalls:
         m_Calls:
@@ -15334,7 +15334,7 @@ MonoBehaviour:
     Instruction: Entferne den Verschluss vom Maischeimer
     HelpMsg: 
     ErrorMsg: 
-    Duration: 0
+    Duration: 1.2
     OnStart:
       m_PersistentCalls:
         m_Calls:
@@ -15357,7 +15357,7 @@ MonoBehaviour:
     Instruction: "F\xFClle die Maische in die Brennblase"
     HelpMsg: 
     ErrorMsg: 
-    Duration: 0
+    Duration: 5.3
     OnStart:
       m_PersistentCalls:
         m_Calls:
@@ -15380,7 +15380,7 @@ MonoBehaviour:
     Instruction: "Verschlie\xDFe die Brennblase mit dem Helm"
     HelpMsg: 
     ErrorMsg: 
-    Duration: 0
+    Duration: 1.5
     OnStart:
       m_PersistentCalls:
         m_Calls:
@@ -15403,7 +15403,7 @@ MonoBehaviour:
     Instruction: "Stelle den K\xFChler auf"
     HelpMsg: 
     ErrorMsg: 
-    Duration: 0
+    Duration: 1.5
     OnStart:
       m_PersistentCalls:
         m_Calls:
@@ -15437,7 +15437,7 @@ MonoBehaviour:
     Instruction: Bringe die Wasserableitung an
     HelpMsg: 
     ErrorMsg: 
-    Duration: 0
+    Duration: 1.5
     OnStart:
       m_PersistentCalls:
         m_Calls:
@@ -15460,7 +15460,7 @@ MonoBehaviour:
     Instruction: Bringe die Wasserzuleitung an
     HelpMsg: 
     ErrorMsg: 
-    Duration: 0
+    Duration: 1.15
     OnStart:
       m_PersistentCalls:
         m_Calls:
@@ -15483,7 +15483,7 @@ MonoBehaviour:
     Instruction: Stelle den Brenner auf
     HelpMsg: 
     ErrorMsg: 
-    Duration: 0
+    Duration: 1.5
     OnStart:
       m_PersistentCalls:
         m_Calls:
@@ -15506,7 +15506,7 @@ MonoBehaviour:
     Instruction: "Entz\xFCnde den Brenner"
     HelpMsg: 
     ErrorMsg: 
-    Duration: 0
+    Duration: 2
     OnStart:
       m_PersistentCalls:
         m_Calls:
@@ -15552,7 +15552,7 @@ MonoBehaviour:
     Instruction: "Stelle den Auffangbeh\xE4lter auf"
     HelpMsg: 
     ErrorMsg: 
-    Duration: 0
+    Duration: 2.3
     OnStart:
       m_PersistentCalls:
         m_Calls:
@@ -15586,7 +15586,7 @@ MonoBehaviour:
     Instruction: "Gie\xDFe den Vorlauf ab"
     HelpMsg: 
     ErrorMsg: 
-    Duration: 0
+    Duration: 6.3
     OnStart:
       m_PersistentCalls:
         m_Calls:
