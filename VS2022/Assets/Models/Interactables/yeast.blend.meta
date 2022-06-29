@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e53a30ca8c6cc2347a3f098f0bca949d
+guid: 30eeeb2154af83041ada33d43ecc988e
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
@@ -7,48 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: BeakerlMaterial
-    second: {fileID: 2100000, guid: 5e7454662c6aa484a9d02ef733ef6a4a, type: 2}
+      name: Material.001
+    second: {fileID: 2100000, guid: 7759c68a54f95294193fd181382f2a09, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: BowlMaterial
-    second: {fileID: 2100000, guid: 82ef45c81ae743640bf4b8b50ca4478a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: MashBucketMaterial
-    second: {fileID: 2100000, guid: 11ef5def00b5764439ba3a1c7ce01ffd, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: MashBucketMaterial.001
-    second: {fileID: 2100000, guid: 25d0fcaaab6d1a3409743dee4e4d2663, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: SilverMaterial
-    second: {fileID: 2100000, guid: 8ed5d513f09e52544b6f0991d9bc91b2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: SugarCupMaterial
-    second: {fileID: 2100000, guid: 6eb39724670b608449ba2a04f0a005f8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: TubeMaterial
-    second: {fileID: 2100000, guid: 0ce1b412ac9462d4e80f5a3b308edd9b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: WaterTankMaterial
-    second: {fileID: 2100000, guid: f002b3c3eed81cb438f5342e57ee6fe2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: WaterpumpMaterial
-    second: {fileID: 2100000, guid: db2f9b0b0a3dd8a44a23006f0c64f6e3, type: 2}
+      name: YeastMaterial
+    second: {fileID: 2100000, guid: bf107b38c76b04b4b9e32b2c573fcec1, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
