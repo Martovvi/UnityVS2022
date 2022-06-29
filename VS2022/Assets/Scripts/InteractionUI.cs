@@ -7,6 +7,8 @@ public class InteractionUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI instructionLabel;
     [SerializeField] private TextMeshProUGUI errorLabel;
     [SerializeField] private TextMeshProUGUI helpLabel;
+    [SerializeField] private TextMeshProUGUI resultLabel;
+    [SerializeField] private TextMeshProUGUI ratingLabel;
     [SerializeField] private GameObject helpBox;
 
     [SerializeField] private TextMeshProUGUI errorCountLabel = null;
@@ -26,25 +28,38 @@ public class InteractionUI : MonoBehaviour
 
     public void DisplayInstruction(string instruction)
     {
-        StopHelpAndErrorDisplay();
+        StopDisplays();
         instructionLabel.SetText(instruction);
     }
 
     public void DisplayHelp(string helpMsg, int helpCount)
     {
-        StopHelpAndErrorDisplay();
+        StopDisplays();
         helpCountLabel.text = helpCount + "";
+        helpBox.SetActive(true);
         StartCoroutine(DisplayForDuration(helpLabel, helpMsg, helpDisplayTime));
     }
 
     public void DisplayError(string errorMsg, int errorCount)
     {
-        StopHelpAndErrorDisplay();
+        StopDisplays();
         errorCountLabel.text = errorCount + "";
         StartCoroutine(DisplayForDuration(errorLabel, errorMsg, errorDisplayTime));
     }
 
-    public void StopHelpAndErrorDisplay()
+    public void DisplayResult(string result)
+    {
+        StopDisplays();
+        resultLabel.SetText(result);
+    }
+
+    public void DisplayRating(string rating)
+    {
+        StopDisplays();
+        ratingLabel.SetText(rating);
+    }
+
+    public void StopDisplays()
     {
         StopAllCoroutines();
         helpLabel.SetText("");
@@ -54,7 +69,6 @@ public class InteractionUI : MonoBehaviour
 
     private IEnumerator DisplayForDuration(TextMeshProUGUI label, string msg, float duration)
     {
-        helpBox.SetActive(true);
         label.text = msg;
         yield return new WaitForSeconds(duration);
         label.text = "";

@@ -97,11 +97,49 @@ public class InteractionManager : MonoBehaviour, IInteractionListener
         }
     }
 
+    public void evaluateResultAndRating()
+    {
+        ui.DisplayResult("Sie haben <color=red>" + errorCount + " Fehler</color> gemacht und <color=orange>" + 
+                         helpCount + "</color>"+ " mal die<color=orange>"+ " Hilfe</color> angefragt!");
+
+        float rating = (30 - (1.50f * errorCount + 0.85f * helpCount));
+
+        if(rating == 30f)
+        { 
+            ui.DisplayRating("Bewertung: <b><i><color=#ff00ffff>perfekt!</color></i><b>");
+        }
+        else if (rating >=25f)
+        {
+            ui.DisplayRating("Bewertung: <i><color=purple>sehr gut</color></i>");
+        }
+        else if (rating >= 20f)
+        {
+            ui.DisplayRating("Bewertung: <color=blue>gut</color>");
+        }
+        else if (rating >= 15f)
+        {
+            ui.DisplayRating("Bewertung: <color=green>befriedigend</color>");
+        }
+        else if (rating >= 10f)
+        {
+            ui.DisplayRating("Bewertung: <color=yellow>ausreichend</color>");
+        }
+        else if (rating >= 5f)
+        {
+            ui.DisplayRating("Bewertung: <color=orange>mangelhaft</color>");
+        }
+        else
+        {
+            ui.DisplayRating("Bewertung: <b><color=red>ungenügend</color></b>");
+        }
+    }
+    
+
     private IEnumerator UpdateInteraction()
     {
         correctSound.Play();
         interactionInProgress = true;
-        ui.StopHelpAndErrorDisplay();
+        ui.StopDisplays();
         currentInteraction.OnStart?.Invoke();
         yield return new WaitForSeconds(currentInteraction.Duration);
         currentInteraction.OnEnd?.Invoke();
