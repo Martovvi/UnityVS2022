@@ -59,7 +59,6 @@ public class InteractionManager : MonoBehaviour, IInteractionListener
 
         foreach (var interactable in globalInteractables)
         {
-            Debug.Log(interactable.name);
             interactable.AddListener(this);
         }
     }
