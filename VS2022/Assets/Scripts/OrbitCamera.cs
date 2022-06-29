@@ -17,7 +17,7 @@ public class OrbitCamera : MonoBehaviour
     public float distanceMin = .5f;
     public float distanceMax = 15f;
 
-    private Rigidbody rbody;
+    // private Rigidbody rbody;
 
     float x = 0.0f;
     float y = 0.0f;
@@ -31,13 +31,13 @@ public class OrbitCamera : MonoBehaviour
         x = angles.y;
         y = angles.x;
 
-        rbody = GetComponent<Rigidbody>();
+        // rbody = GetComponent<Rigidbody>();
 
         // Make the rigid body not change rotation
-        if (rbody != null)
-        {
-            rbody.freezeRotation = true;
-        }
+        // if (rbody != null)
+        // {
+        //     rbody.freezeRotation = true;
+        // }
     }
 
     void LateUpdate()
@@ -57,7 +57,7 @@ public class OrbitCamera : MonoBehaviour
         {
             orbitable = true;
             Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
+            // Cursor.lockState = CursorLockMode.Locked;
         }
         else if (Input.GetMouseButtonUp(1))
         {
@@ -79,11 +79,11 @@ public class OrbitCamera : MonoBehaviour
 
                 distance = Mathf.Clamp(distance - Input.GetAxis("Mouse ScrollWheel") * 5, distanceMin, distanceMax);
 
-                RaycastHit hit;
-                if (Physics.Linecast(target.position, transform.position, out hit))
-                {
-                    distance -= hit.distance;
-                }
+                // RaycastHit hit;
+                // if (Physics.Linecast(target.position, transform.position, out hit))
+                // {
+                //     distance -= hit.distance;
+                // }
                 Vector3 negDistance = new Vector3(0.0f, 0.0f, -distance);
                 Vector3 position = rotation * negDistance + target.position;
 
