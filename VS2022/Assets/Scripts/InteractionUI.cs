@@ -7,6 +7,7 @@ public class InteractionUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI instructionLabel;
     [SerializeField] private TextMeshProUGUI errorLabel;
     [SerializeField] private TextMeshProUGUI helpLabel;
+    [SerializeField] private GameObject helpBox;
 
     [SerializeField] private TextMeshProUGUI errorCountLabel = null;
     [SerializeField] private TextMeshProUGUI helpCountLabel = null;
@@ -48,13 +49,16 @@ public class InteractionUI : MonoBehaviour
         StopAllCoroutines();
         helpLabel.SetText("");
         errorLabel.SetText("");
+        helpBox.SetActive(false);
     }
 
     private IEnumerator DisplayForDuration(TextMeshProUGUI label, string msg, float duration)
     {
+        helpBox.SetActive(true);
         label.text = msg;
         yield return new WaitForSeconds(duration);
         label.text = "";
+        helpBox.SetActive(false);
     }
 }
 
