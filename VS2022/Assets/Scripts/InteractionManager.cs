@@ -90,22 +90,22 @@ public class InteractionManager : MonoBehaviour, IInteractionListener
         {
             if (interactionIndex != interactionStepError)
             {
+                wrongSound.Play();
                 ui.DisplayError(currentInteraction.ErrorMsg, ++errorCount);
                 interactionStepError = interactionIndex;
-                wrongSound.Play();
             }
         }
     }
 
     private IEnumerator UpdateInteraction()
     {
+        correctSound.Play();
         interactionInProgress = true;
         ui.StopHelpAndErrorDisplay();
         currentInteraction.OnStart?.Invoke();
         yield return new WaitForSeconds(currentInteraction.Duration);
         currentInteraction.OnEnd?.Invoke();
         interactionIndex++;
-        correctSound.Play();
 
         if (interactionIndex < interactions.Count)
         {
