@@ -20120,7 +20120,7 @@ MonoBehaviour:
     Instruction: Stelle die Wasserpumpe an
     HelpMsg: 
     ErrorMsg: 
-    Duration: 1
+    Duration: 3
     OnStart:
       m_PersistentCalls:
         m_Calls:
