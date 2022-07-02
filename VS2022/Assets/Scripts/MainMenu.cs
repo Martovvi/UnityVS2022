@@ -5,9 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public void PlayGame()
+    public void PlayTrainingMode()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("VS2022Training");
+    }
+
+    public void PlayDemoMode()
+    {
+        SceneManager.LoadScene("VS2022Demo");
     }
 
     public void ReturnToMainMenu()
@@ -17,7 +22,6 @@ public class MainMenu : MonoBehaviour
 
     public void QuitGame()
     {
-        Debug.Log("QUIT");
         Application.Quit();
     }
 }
