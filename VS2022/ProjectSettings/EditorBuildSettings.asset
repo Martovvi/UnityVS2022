@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 881400c07ce0ee547b29e03cc9d8ecab
   - enabled: 1
+    path: Assets/Scenes/VS2022Demo.unity
+    guid: 0849d2e49b394cf499eb0025ec6317cc
+  - enabled: 1
     path: Assets/Scenes/VS2022Training.unity
     guid: 465dbbc345496aa4fa9910c2ae2098e7
   m_configObjects: {}
