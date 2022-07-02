@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 public class DemonstrationManager : MonoBehaviour
 {
-    [SerializeField] private InteractionUI ui;
+    [SerializeField] private DemonstrationUI ui;
     [SerializeField] private Button nextButton;
     [SerializeField] private Button prevButton;
     [SerializeField] private List<Demonstration> demonstrations;
@@ -22,52 +22,52 @@ public class DemonstrationManager : MonoBehaviour
     {
         if (demonstrations.Count == 0)
         {
-            Debug.LogWarning("No Demonstrations in Interaction Manager.");
+            Debug.LogWarning("No Demonstrations in Demonstration Manager.");
             return;
         }
 
         currentDemonstration = demonstrations[demonstrationIndex];
-        stepCount = demonstrations.Count;
         ui.DisplayInstruction(currentDemonstration.Instruction);
         nextButton.onClick.AddListener(gotToNextStep);
         prevButton.onClick.AddListener(gotToPrevStep);
+        StartCoroutine(UpdateDemonstration(demonstrationIndex));
     }
 
     void gotToNextStep()
         {
-           StartCoroutine(UpdateDemonstration());
+           demonstrationIndex++;
+           StartCoroutine(UpdateDemonstration(demonstrationIndex));
         }
 
     void gotToPrevStep()
         {
            demonstrationIndex--;
+           StartCoroutine(UpdateDemonstration(demonstrationIndex));
         }      
 
-    // public void OnNotify(Interactable interactable)
-    // {
-
-    //     if (DemonstartionsCompleted)
-    //         return;
-
-    //     StartCoroutine(UpdateDemonstration());
-    // }
-    
-
-    private IEnumerator UpdateDemonstration()
+    private IEnumerator UpdateDemonstration(int demonstrationIndex)
     {
-        ui.StopDisplays(); 
-        currentDemonstration.OnStart?.Invoke();
-        yield return new WaitForSeconds(0);
-        currentDemonstration.OnEnd?.Invoke();
-        demonstrationIndex++;      
-
+        if (demonstrationIndex == 0)
+        {
+            prevButton.enabled = false;
+        }
+        else
+        {
+            prevButton.enabled = true;
+        }
+           
         if (demonstrationIndex < demonstrations.Count)
         {
+            nextButton.enabled = true;
             currentDemonstration = demonstrations[demonstrationIndex];
+            currentDemonstration.OnStart?.Invoke();
+            yield return new WaitForSeconds(0);
+            currentDemonstration.OnEnd?.Invoke(); 
             ui.DisplayInstruction(currentDemonstration.Instruction);
         }
         else
         {
+            nextButton.enabled = false;
             OnCompleted?.Invoke();
         }
     }
