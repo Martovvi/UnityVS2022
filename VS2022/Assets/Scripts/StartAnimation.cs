@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class StartAnimation : MonoBehaviour
 {
-   [SerializeField] private List<string> animState; 
-   Animator anim;
+//     [SerializeField] private GameObject animatedObject;
 
-    public void StartAnim(int index)
-    {
-       anim = GetComponent<Animator>();
-       anim.Play(animState[index], -1, 0.0f);
-    }   
+//     public void StartAnim()
+//     {
+//        animation = animatedObject.GetComponent<Animator>();
+//        animation.Play();
+//     }
 }
