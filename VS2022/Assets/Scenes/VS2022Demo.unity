@@ -7187,6 +7187,7 @@ GameObject:
   - component: {fileID: 1292613334}
   - component: {fileID: 1292613333}
   - component: {fileID: 1292613332}
+  - component: {fileID: 1292613337}
   m_Layer: 0
   m_Name: Booze
   m_TagString: Untagged
@@ -7287,6 +7288,19 @@ Transform:
   m_Father: {fileID: 4151436659617994341}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1292613337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292613331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a01b72bee798dcc4baf63d0ebd8531ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToDisappear: {fileID: 1292613331}
 --- !u!4 &1309414169 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 46a452efdc3f0b94d9ddaa7993e9b2a2,
@@ -7421,6 +7435,7 @@ GameObject:
   - component: {fileID: 1318229671}
   - component: {fileID: 1318229670}
   - component: {fileID: 1318229673}
+  - component: {fileID: 1318229674}
   m_Layer: 0
   m_Name: PreBooze
   m_TagString: Untagged
@@ -7521,6 +7536,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToAppear:
   - {fileID: 1318229668}
+--- !u!114 &1318229674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318229668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a01b72bee798dcc4baf63d0ebd8531ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToDisappear: {fileID: 1318229668}
 --- !u!4 &1338156071 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b1dd6cab84610f24aad4ecbd6e75ac5d,
@@ -16353,10 +16381,22 @@ MonoBehaviour:
     OnStart:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 8941860718582572989}
-          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-          m_MethodName: SetTrigger
-          m_Mode: 5
+        - m_Target: {fileID: 6704808176904391611}
+          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
+          m_MethodName: StopAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8941860718582572995}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -16372,40 +16412,40 @@ MonoBehaviour:
     OnStart:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 6704808176904391607}
-          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-          m_MethodName: SetTrigger
-          m_Mode: 5
+        - m_Target: {fileID: 8941860718582572994}
+          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
+          m_MethodName: StopAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8654858001566675686}
+          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
+          m_MethodName: StopAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 6704808176904391612}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: Move SugarCup
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 8941860718582572994}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Stop Beaker
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 8654858001566675686}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Stop Bowl
             m_BoolArgument: 0
           m_CallState: 2
     OnEnd:
@@ -16415,40 +16455,40 @@ MonoBehaviour:
     OnStart:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 8654858001566675682}
-          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-          m_MethodName: SetTrigger
-          m_Mode: 5
+        - m_Target: {fileID: 6438018260590922531}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 2
             m_FloatArgument: 0
-            m_StringArgument: Move Bowl
+            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 6704808176904391611}
           m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
           m_MethodName: StopAnim
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Stop SugarCup
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 6438018260590922529}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 1
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8654858001566675687}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Move Bowl
             m_BoolArgument: 0
           m_CallState: 2
     OnEnd:
@@ -16458,28 +16498,28 @@ MonoBehaviour:
     OnStart:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 6438018260590922525}
-          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-          m_MethodName: SetTrigger
-          m_Mode: 5
+        - m_Target: {fileID: 8654858001566675686}
+          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
+          m_MethodName: StopAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 6438018260590922531}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: Move Cap
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 8654858001566675686}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Stop Bowl
             m_BoolArgument: 0
           m_CallState: 2
     OnEnd:
@@ -16489,26 +16529,26 @@ MonoBehaviour:
     OnStart:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 6438018260590922529}
+        - m_Target: {fileID: 6438018260590922530}
           m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
           m_MethodName: StopAnim
-          m_Mode: 1
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: Stop Cap
+            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 8107968920837232512}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 1
+        - m_Target: {fileID: 8107968920837232513}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 1
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -16520,28 +16560,28 @@ MonoBehaviour:
     OnStart:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 8107968920837232510}
-          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-          m_MethodName: SetTrigger
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Move Potstill
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 6438018260590922529}
+        - m_Target: {fileID: 6438018260590922530}
           m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
           m_MethodName: StopAnim
-          m_Mode: 1
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8107968920837232513}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Move Potstill
             m_BoolArgument: 0
           m_CallState: 2
     OnEnd:
@@ -16551,40 +16591,40 @@ MonoBehaviour:
     OnStart:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 6438018260590922525}
-          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-          m_MethodName: SetTrigger
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Move CapBack
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 8107968920837232512}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Stop PotStill
-            m_BoolArgument: 0
-          m_CallState: 2
         - m_Target: {fileID: 4222036285929136065}
           m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
           m_MethodName: StopAnim
-          m_Mode: 1
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8107968920837232512}
+          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
+          m_MethodName: StopAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 6438018260590922531}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: Move CapBack
             m_BoolArgument: 0
           m_CallState: 2
     OnEnd:
@@ -16594,40 +16634,40 @@ MonoBehaviour:
     OnStart:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 4222036285929136060}
-          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-          m_MethodName: SetTrigger
-          m_Mode: 5
+        - m_Target: {fileID: 6438018260590922530}
+          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
+          m_MethodName: StopAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 9077778274087009506}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 4222036285929136066}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: Move MashBucket
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 6438018260590922530}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Stop Cap
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 9077778274087009505}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
     OnEnd:
@@ -16637,28 +16677,40 @@ MonoBehaviour:
     OnStart:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 9077778274087009503}
-          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-          m_MethodName: SetTrigger
-          m_Mode: 5
+        - m_Target: {fileID: 8923763999356925616}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 4222036285929136065}
+          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
+          m_MethodName: StopAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 9077778274087009506}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: Move Helmet
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 4222036285929136065}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Stop MashBucket
             m_BoolArgument: 0
           m_CallState: 2
     OnEnd:
@@ -16668,40 +16720,40 @@ MonoBehaviour:
     OnStart:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 8923763999356925611}
-          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-          m_MethodName: SetTrigger
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Move CoolingTank
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 9077778274087009505}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Stop Helmet
-            m_BoolArgument: 0
-          m_CallState: 2
         - m_Target: {fileID: 8273802254154211871}
           m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
           m_MethodName: StopAnim
-          m_Mode: 1
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 9077778274087009505}
+          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
+          m_MethodName: StopAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8923763999356925616}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Move CoolingTank
             m_BoolArgument: 0
           m_CallState: 2
     OnEnd:
@@ -16711,40 +16763,40 @@ MonoBehaviour:
     OnStart:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 8273802254154211870}
-          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-          m_MethodName: SetTrigger
-          m_Mode: 5
+        - m_Target: {fileID: 8047490994182453455}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 1
             m_FloatArgument: 0
-            m_StringArgument: Rotate Nut
+            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 8923763999356925615}
           m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
           m_MethodName: StopAnim
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Stop CoolingTank
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 8047490994182453454}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 1
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8273802254154211872}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Rotate Nut
             m_BoolArgument: 0
           m_CallState: 2
     OnEnd:
@@ -16754,40 +16806,40 @@ MonoBehaviour:
     OnStart:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 8047490994182453452}
-          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-          m_MethodName: SetTrigger
-          m_Mode: 5
+        - m_Target: {fileID: 8811592841478858422}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 1
             m_FloatArgument: 0
-            m_StringArgument: Move TubeUp
+            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 8273802254154211871}
           m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
           m_MethodName: StopAnim
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Stop Nut
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 8811592841478858421}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 1
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8047490994182453455}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Move TubeUp
             m_BoolArgument: 0
           m_CallState: 2
     OnEnd:
@@ -16797,40 +16849,40 @@ MonoBehaviour:
     OnStart:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 8811592841478858419}
-          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-          m_MethodName: SetTrigger
-          m_Mode: 5
+        - m_Target: {fileID: 8481868002061159336}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 1
             m_FloatArgument: 0
-            m_StringArgument: Move TubeDown
+            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 8047490994182453454}
           m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
           m_MethodName: StopAnim
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Stop TubeUp
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 8481868002061159335}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 1
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8811592841478858422}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Move TubeDown
             m_BoolArgument: 0
           m_CallState: 2
     OnEnd:
@@ -16840,40 +16892,64 @@ MonoBehaviour:
     OnStart:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 8481868002061159332}
-          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-          m_MethodName: SetTrigger
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Move Burner
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 8811592841478858421}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Stop TubeDown
-            m_BoolArgument: 0
-          m_CallState: 2
         - m_Target: {fileID: 2526428937153535876}
           m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
           m_MethodName: StopAnim
-          m_Mode: 1
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8481868002061159333}
+          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+          m_MethodName: set_enabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 5280903759475425273}
+          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
+          m_MethodName: StopAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8811592841478858421}
+          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
+          m_MethodName: StopAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8481868002061159336}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Move Burner
             m_BoolArgument: 0
           m_CallState: 2
     OnEnd:
@@ -16883,10 +16959,34 @@ MonoBehaviour:
     OnStart:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2526428937153535873}
-          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-          m_MethodName: SetTrigger
-          m_Mode: 5
+        - m_Target: {fileID: 8923763999356925615}
+          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
+          m_MethodName: StopAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 8481868002061159335}
+          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
+          m_MethodName: StopAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 2526428937153535877}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -16895,29 +16995,29 @@ MonoBehaviour:
             m_StringArgument: Move Lighter
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 8481868002061159335}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Stop Burner
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 8923763999356925615}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 1
+        - m_Target: {fileID: 8481868002061159333}
+          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+          m_MethodName: set_enabled
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 5280903759475425274}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Raise Pointer
+            m_BoolArgument: 1
           m_CallState: 2
     OnEnd:
       m_PersistentCalls:
@@ -16926,40 +17026,40 @@ MonoBehaviour:
     OnStart:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 8923763999356925611}
-          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-          m_MethodName: SetTrigger
-          m_Mode: 5
+        - m_Target: {fileID: 6886713078011628620}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 2
             m_FloatArgument: 0
-            m_StringArgument: Raise Water
+            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 2526428937153535876}
           m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
           m_MethodName: StopAnim
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Stop Lighter
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 6886713078011628618}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 1
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8923763999356925616}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: Raise Water
             m_BoolArgument: 0
           m_CallState: 2
     OnEnd:
@@ -16969,10 +17069,34 @@ MonoBehaviour:
     OnStart:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 6886713078011628613}
-          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-          m_MethodName: SetTrigger
-          m_Mode: 5
+        - m_Target: {fileID: 1318229674}
+          m_TargetAssemblyTypeName: ObjectDisappear, Assembly-CSharp
+          m_MethodName: MakeObjectDisappear
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8923763999356925615}
+          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
+          m_MethodName: StopAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 6886713078011628620}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -16981,25 +17105,49 @@ MonoBehaviour:
             m_StringArgument: Move Cup
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 8923763999356925615}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Stop CoolingTank
-            m_BoolArgument: 0
-          m_CallState: 2
     OnEnd:
       m_PersistentCalls:
         m_Calls: []
   - Instruction: Abwarten
     OnStart:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 6886713078011628618}
+          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
+          m_MethodName: StopAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 6886713078011628618}
+          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
+          m_MethodName: StopAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1318229673}
+          m_TargetAssemblyTypeName: ObjectAppear, Assembly-CSharp
+          m_MethodName: MakeObjectAppear
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     OnEnd:
       m_PersistentCalls:
         m_Calls: []
@@ -17007,14 +17155,26 @@ MonoBehaviour:
     OnStart:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 6886713078011628613}
-          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-          m_MethodName: SetTrigger
-          m_Mode: 5
+        - m_Target: {fileID: 1292613337}
+          m_TargetAssemblyTypeName: ObjectDisappear, Assembly-CSharp
+          m_MethodName: MakeObjectDisappear
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 6886713078011628620}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
             m_FloatArgument: 0
             m_StringArgument: Empty Cup
             m_BoolArgument: 0
@@ -17026,10 +17186,22 @@ MonoBehaviour:
     OnStart:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 6886713078011628619}
+        - m_Target: {fileID: 6886713078011628618}
           m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
           m_MethodName: StopAnim
-          m_Mode: 1
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1292613332}
+          m_TargetAssemblyTypeName: ObjectAppear, Assembly-CSharp
+          m_MethodName: MakeObjectAppear
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -17291,6 +17463,7 @@ GameObject:
   - component: {fileID: 8923763999356925613}
   - component: {fileID: 8923763999356925614}
   - component: {fileID: 8923763999356925615}
+  - component: {fileID: 8923763999356925616}
   m_Layer: 0
   m_Name: CoolingTank
   m_TagString: Untagged
@@ -18725,6 +18898,7 @@ GameObject:
   - component: {fileID: 2526428937153535873}
   - component: {fileID: 2526428937153535875}
   - component: {fileID: 2526428937153535876}
+  - component: {fileID: 2526428937153535877}
   m_Layer: 0
   m_Name: lighter
   m_TagString: Untagged
@@ -18763,6 +18937,7 @@ GameObject:
   - component: {fileID: 5280903759475425271}
   - component: {fileID: 5280903759475425272}
   - component: {fileID: 5280903759475425273}
+  - component: {fileID: 5280903759475425274}
   m_Layer: 0
   m_Name: Thermometer
   m_TagString: Untagged
@@ -18788,6 +18963,7 @@ GameObject:
   - component: {fileID: 4222036285929136063}
   - component: {fileID: 4222036285929136064}
   - component: {fileID: 4222036285929136065}
+  - component: {fileID: 4222036285929136066}
   m_Layer: 0
   m_Name: MashBucket
   m_TagString: Untagged
@@ -18919,7 +19095,7 @@ Animator:
   m_GameObject: {fileID: 2300115113219361377}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 762e207249698cb43bbc499b987461d9, type: 2}
+  m_Controller: {fileID: 9100000, guid: 36a321b9a0eedc141a958faae6624d4b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -18954,7 +19130,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: Stop Lighter
+  animState:
+  - LighterMove
+--- !u!114 &2526428937153535877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2300115113219361377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animState:
+  - LighterMove
 --- !u!4 &2541432774291076356
 Transform:
   m_ObjectHideFlags: 0
@@ -19078,6 +19269,7 @@ GameObject:
   - component: {fileID: 8107968920837232510}
   - component: {fileID: 8107968920837232511}
   - component: {fileID: 8107968920837232512}
+  - component: {fileID: 8107968920837232513}
   m_Layer: 6
   m_Name: PotStill
   m_TagString: Untagged
@@ -19158,6 +19350,7 @@ GameObject:
   - component: {fileID: 8273802254154211867}
   - component: {fileID: 8273802254154211870}
   - component: {fileID: 8273802254154211871}
+  - component: {fileID: 8273802254154211872}
   m_Layer: 0
   m_Name: Nut
   m_TagString: Untagged
@@ -19238,6 +19431,7 @@ GameObject:
   - component: {fileID: 8481868002061159333}
   - component: {fileID: 8481868002061159334}
   - component: {fileID: 8481868002061159335}
+  - component: {fileID: 8481868002061159336}
   m_Layer: 0
   m_Name: Burner
   m_TagString: Untagged
@@ -19300,6 +19494,7 @@ GameObject:
   - component: {fileID: 3935325168247655861}
   - component: {fileID: 6704808176904391604}
   - component: {fileID: 6704808176904391607}
+  - component: {fileID: 6704808176904391612}
   - component: {fileID: 6704808176904391608}
   - component: {fileID: 6704808176904391609}
   - component: {fileID: 6704808176904391610}
@@ -19612,7 +19807,7 @@ Animator:
   m_GameObject: {fileID: 2420495485290823277}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b62c2c68afed7ed489fc62f5c5574524, type: 2}
+  m_Controller: {fileID: 9100000, guid: e9304ab4bbbecce45b220b7082af9fb1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -19687,7 +19882,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: Stop MashBucket
+  animState:
+  - MashBucketMove
+--- !u!114 &4222036285929136066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2420495485290823277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animState:
+  - MashBucketMove
 --- !u!4 &4235878503867073624
 Transform:
   m_ObjectHideFlags: 0
@@ -20058,8 +20268,8 @@ GameObject:
   - component: {fileID: 6438018260590922527}
   - component: {fileID: 6438018260590922526}
   - component: {fileID: 6438018260590922528}
-  - component: {fileID: 6438018260590922529}
   - component: {fileID: 6438018260590922530}
+  - component: {fileID: 6438018260590922531}
   m_Layer: 0
   m_Name: Cap
   m_TagString: Untagged
@@ -20287,7 +20497,7 @@ Animator:
   m_GameObject: {fileID: 2330456155652194586}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bf2d1207df51b1b4caac7bc4a3fb0bef, type: 2}
+  m_Controller: {fileID: 9100000, guid: 704cd06dd4bda4b428b8600f5f54e661, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -20309,7 +20519,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: Stop Pointer
+  animState:
+  - PointerRotate
+--- !u!114 &5280903759475425274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2330456155652194586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animState:
+  - PointerRotate
 --- !u!1 &5284790720823555362
 GameObject:
   m_ObjectHideFlags: 0
@@ -20325,6 +20550,7 @@ GameObject:
   - component: {fileID: 8811592841478858419}
   - component: {fileID: 8811592841478858420}
   - component: {fileID: 8811592841478858421}
+  - component: {fileID: 8811592841478858422}
   m_Layer: 0
   m_Name: TubeDown
   m_TagString: Untagged
@@ -20485,7 +20711,7 @@ Transform:
   - {fileID: 5370805675632128595}
   m_Father: {fileID: 5250192253562658141}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 92.896}
+  m_LocalEulerAnglesHint: {x: -165.96826, y: -78.04519, z: 170.9412}
 --- !u!33 &5756634867498437009
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -20553,6 +20779,7 @@ GameObject:
   - component: {fileID: 8654858001566675684}
   - component: {fileID: 8654858001566675685}
   - component: {fileID: 8654858001566675686}
+  - component: {fileID: 8654858001566675687}
   m_Layer: 0
   m_Name: Bowl
   m_TagString: Untagged
@@ -20716,7 +20943,7 @@ Animator:
   m_GameObject: {fileID: 4947702745490527867}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 792dfabac4ecc9c4488a4a051c1b83a7, type: 2}
+  m_Controller: {fileID: 9100000, guid: 824ac15d8cfb61d4c81e1fe162e6d310, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -20739,7 +20966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToAppear:
-  - {fileID: 991104096}
+  - {fileID: 2655001967609230932}
 --- !u!114 &6438018260590922527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20766,19 +20993,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 630766315}
---- !u!114 &6438018260590922529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4947702745490527867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trigger: Stop Cap
 --- !u!114 &6438018260590922530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20791,7 +21005,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: Stop Cap Back
+  animState:
+  - CapMove
+  - CapMoveBack
+--- !u!114 &6438018260590922531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4947702745490527867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animState:
+  - CapMove
+  - CapMoveBack
+  - Idle
 --- !u!23 &6474569424012491101
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20976,6 +21208,7 @@ GameObject:
   - component: {fileID: 9077778274087009503}
   - component: {fileID: 9077778274087009504}
   - component: {fileID: 9077778274087009505}
+  - component: {fileID: 9077778274087009506}
   m_Layer: 0
   m_Name: Helmet
   m_TagString: Untagged
@@ -21015,7 +21248,7 @@ Animator:
   m_GameObject: {fileID: 3442748483682333652}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 12a522ad3d1cbf9478d7eb61e9fe6b14, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4c62aa44f82e8604da7f11ed5497315f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -21077,7 +21310,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: Stop SugarCup
+  animState:
+  - SugarCupMove
+--- !u!114 &6704808176904391612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3442748483682333652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animState:
+  - SugarCupMove
 --- !u!4 &6734644371771803138
 Transform:
   m_ObjectHideFlags: 0
@@ -21297,7 +21545,7 @@ GameObject:
   - component: {fileID: 6886713078011628616}
   - component: {fileID: 6886713078011628617}
   - component: {fileID: 6886713078011628618}
-  - component: {fileID: 6886713078011628619}
+  - component: {fileID: 6886713078011628620}
   m_Layer: 0
   m_Name: Cup
   m_TagString: Untagged
@@ -21315,7 +21563,7 @@ Animator:
   m_GameObject: {fileID: 6886713078011628609}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c7d598726a2866f4ab4907b60c5a6af4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 911c3ced3571bd1429d0ec74c14b2f6a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -21391,8 +21639,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: Stop Cup
---- !u!114 &6886713078011628619
+  animState:
+  - CupMove
+  - CupEmpty
+--- !u!114 &6886713078011628620
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -21401,10 +21651,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6886713078011628609}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
+  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: Stop Cup Empty
+  animState:
+  - CupMove
+  - CupEmpty
+  - Idle
 --- !u!1 &6964342181993611344
 GameObject:
   m_ObjectHideFlags: 0
@@ -21892,6 +22145,7 @@ GameObject:
   - component: {fileID: 8047490994182453452}
   - component: {fileID: 8047490994182453453}
   - component: {fileID: 8047490994182453454}
+  - component: {fileID: 8047490994182453455}
   m_Layer: 0
   m_Name: TubeUp
   m_TagString: Untagged
@@ -21923,7 +22177,7 @@ Animator:
   m_GameObject: {fileID: 8047490994182453448}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2bb1146d06c422146b1b6c37398719e9, type: 2}
+  m_Controller: {fileID: 9100000, guid: 10098376f44dd284485fa6c9ad5c2cfc, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -21958,7 +22212,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: Stop TubeUp
+  animState:
+  - TubeUpMove
+--- !u!114 &8047490994182453455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8047490994182453448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animState:
+  - TubeUpMove
+  - Idle
 --- !u!33 &8071812335791535221
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -22007,7 +22277,7 @@ Animator:
   m_GameObject: {fileID: 2774721611890493739}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a32de1c79e033634eb0e4f623d302aac, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6cb5253bf7e8a19408a7faac26505013, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -22042,7 +22312,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: Stop PotStill
+  animState:
+  - PotStillMove
+--- !u!114 &8107968920837232513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2774721611890493739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animState:
+  - PotStillMove
+  - Idle
 --- !u!33 &8149812722257733849
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -22201,7 +22487,7 @@ Animator:
   m_GameObject: {fileID: 2982757055439859870}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7a585c1dda366d24a8119cb076d7d23c, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7fcae3ea94df5884a92392129943e488, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -22223,7 +22509,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: Stop Nut
+  animState:
+  - NutRotate
+--- !u!114 &8273802254154211872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2982757055439859870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animState:
+  - NutRotate
 --- !u!1 &8319504915771459218
 GameObject:
   m_ObjectHideFlags: 0
@@ -22324,7 +22625,7 @@ Animator:
   m_GameObject: {fileID: 3308170875951189699}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3bebfbeecbdde8245ae6da8cd0aea4fb, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7949b0cf32b888546a5db07f30da3ca4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -22373,7 +22674,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: Stop Burner
+  animState:
+  - BurnerMove
+--- !u!114 &8481868002061159336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3308170875951189699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animState:
+  - BurnerMove
+  - Idle
 --- !u!1 &8600765185404337411
 GameObject:
   m_ObjectHideFlags: 0
@@ -22392,6 +22709,7 @@ GameObject:
   - component: {fileID: 8941860718582572992}
   - component: {fileID: 8941860718582572993}
   - component: {fileID: 8941860718582572994}
+  - component: {fileID: 8941860718582572995}
   m_Layer: 0
   m_Name: Beaker
   m_TagString: Untagged
@@ -22414,7 +22732,7 @@ Transform:
   - {fileID: 546217159196981268}
   m_Father: {fileID: 5250192253562658141}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: -55.589714, y: 41.999176, z: -41.99218}
+  m_LocalEulerAnglesHint: {x: -83.08569, y: 8.419687, z: -8.418283}
 --- !u!136 &8654858001566675681
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -22439,7 +22757,7 @@ Animator:
   m_GameObject: {fileID: 5962591765184349151}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f51bf4553d2136b44b5164745652e031, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3ae0a96b493975e47ab6e01a38c14c1e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -22501,7 +22819,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: Stop Bowl
+  animState:
+  - BowlMove
+--- !u!114 &8654858001566675687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5962591765184349151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animState:
+  - BowlMove
 --- !u!23 &8683737073179775553
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22675,7 +23008,7 @@ Animator:
   m_GameObject: {fileID: 5284790720823555362}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6aadf54166ca13540bb54d9372192040, type: 2}
+  m_Controller: {fileID: 9100000, guid: a84b2925be9069c4ea87a6a8da67fd88, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -22710,7 +23043,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: Stop TubeDown
+  animState:
+  - TubeDownMove
+--- !u!114 &8811592841478858422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5284790720823555362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animState:
+  - TubeDownMove
+  - Idle
 --- !u!4 &8862694909425869969
 Transform:
   m_ObjectHideFlags: 0
@@ -22801,7 +23150,7 @@ Animator:
   m_GameObject: {fileID: 35541798992725366}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 10e3a2a9f79977f4da6607598583e050, type: 2}
+  m_Controller: {fileID: 9100000, guid: 091a15e4631ec534599f744128ef7bc4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -22863,7 +23212,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: Stop CoolingTank
+  animState:
+  - CoolingTankMove
+  - CoolingWaterRising
+--- !u!114 &8923763999356925616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35541798992725366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animState:
+  - CoolingTankMove
+  - CoolingWaterRising
+  - Idle
 --- !u!4 &8941860718582572985
 Transform:
   m_ObjectHideFlags: 0
@@ -22904,7 +23271,7 @@ Animator:
   m_GameObject: {fileID: 8600765185404337411}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ce0b2af34a05b81488de4e2e58390b8e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 621ce9c91f3e5dc48ba0e1238c2d980f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -22980,7 +23347,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: Stop Beaker
+  animState:
+  - BeakerMove
+--- !u!114 &8941860718582572995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8600765185404337411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animState:
+  - BeakerMove
 --- !u!1 &8989474555077761589
 GameObject:
   m_ObjectHideFlags: 0
@@ -23071,7 +23453,7 @@ Animator:
   m_GameObject: {fileID: 6666603822081962134}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6b62e8576729c8a4e84a861bf2864c8e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 44b3471ac7acf604288194192ac20d3a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -23106,7 +23488,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: Stop Helmet
+  animState:
+  - HelmetMove
+--- !u!114 &9077778274087009506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6666603822081962134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animState:
+  - HelmetMove
+  - Idle
 --- !u!1 &9111276449392452216
 GameObject:
   m_ObjectHideFlags: 0

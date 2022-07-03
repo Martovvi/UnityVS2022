@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StopAnimation : MonoBehaviour
+public class StartAnimation : MonoBehaviour
 {
    [SerializeField] private List<string> animState; 
    Animator anim;
 
-    public void StopAnim(int index)
+    public void StartAnim(int index)
     {
        anim = GetComponent<Animator>();
-       anim.Play(animState[index], -1, 1.0f);
+       anim.Play(animState[index], -1, 0.0f);
     }   
 }
