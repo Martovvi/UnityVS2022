@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class StopAnimation : MonoBehaviour
 {
-  Animator anim;
+  [SerializeField] private string trigger;
+  Animator animator;
 
     void Start()
     {
-        anim = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
+    }
+
+    bool AnimatorIsPlaying()
+    {
+        return animator.GetCurrentAnimatorStateInfo(0).length >
+            animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
     }
 
     public void StopAnim()
     {
-        anim.enabled = false;
+        if (AnimatorIsPlaying())
+        {
+            animator.SetTrigger(trigger);
+        }
     }
 }

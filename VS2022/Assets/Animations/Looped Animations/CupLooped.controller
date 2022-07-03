@@ -61,7 +61,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Stop Cup
+    m_ConditionEvent: Stop Cup Empty
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 0}
@@ -99,6 +99,12 @@ AnimatorController:
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
   - m_Name: Stop Cup
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: Stop Cup Empty
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -163,7 +169,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 213a01bf74a2461408533926bb6d3508, type: 2}
+  m_Motion: {fileID: 7400000, guid: bff136f4033d1a641a72cab48b46b0a3, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -191,7 +197,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 2962815ac30cb2b4cb58166d35b49d6e, type: 2}
+  m_Motion: {fileID: 7400000, guid: 2be78398e3f1ff44391697c3bc4b56f8, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

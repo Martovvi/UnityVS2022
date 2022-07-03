@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.938
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1611810636}
-  m_IndirectSpecularColor: {r: 0.23498672, g: 0.13866077, b: 0.11115168, a: 0.938}
+  m_IndirectSpecularColor: {r: 0.23498704, g: 0.13866128, b: 0.111152105, a: 0.938}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8358,7 +8358,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e64d3165b1f58148ab3bca938d424f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToAppear: {fileID: 1292613331}
+  objectToAppear:
+  - {fileID: 1292613331}
 --- !u!136 &1292613333
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8670,7 +8671,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e64d3165b1f58148ab3bca938d424f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToAppear: {fileID: 1318229668}
+  objectToAppear:
+  - {fileID: 1318229668}
 --- !u!4 &1338156071 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b1dd6cab84610f24aad4ecbd6e75ac5d,
@@ -20981,7 +20983,7 @@ MonoBehaviour:
         - m_Target: {fileID: 1318229673}
           m_TargetAssemblyTypeName: ObjectAppear, Assembly-CSharp
           m_MethodName: MakeObjectAppear
-          m_Mode: 1
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -21027,7 +21029,7 @@ MonoBehaviour:
         - m_Target: {fileID: 1292613332}
           m_TargetAssemblyTypeName: ObjectAppear, Assembly-CSharp
           m_MethodName: MakeObjectAppear
-          m_Mode: 1
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -21170,7 +21172,7 @@ Transform:
   - {fileID: 4031348296799523732}
   m_Father: {fileID: 5250192253562658141}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: -32.428726, y: -71.306404, z: 71.29451}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
 --- !u!1 &3133689179267169612
 GameObject:
   m_ObjectHideFlags: 0
@@ -22724,7 +22726,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e64d3165b1f58148ab3bca938d424f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToAppear: {fileID: 2655001967609230932}
+  objectToAppear:
+  - {fileID: 2655001967609230932}
 --- !u!114 &6438018260590922527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24875,7 +24878,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e64d3165b1f58148ab3bca938d424f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToAppear: {fileID: 1746670001}
+  objectToAppear:
+  - {fileID: 1746670001}
 --- !u!114 &8923763999356925613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25002,7 +25006,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e64d3165b1f58148ab3bca938d424f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToAppear: {fileID: 991104096}
+  objectToAppear:
+  - {fileID: 991104096}
 --- !u!114 &8941860718582572993
 MonoBehaviour:
   m_ObjectHideFlags: 0

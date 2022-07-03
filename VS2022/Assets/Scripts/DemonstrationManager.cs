@@ -35,14 +35,16 @@ public class DemonstrationManager : MonoBehaviour
 
     void gotToNextStep()
         {
-           demonstrationIndex++;
-           StartCoroutine(UpdateDemonstration(demonstrationIndex));
+            // StopAllCoroutines();
+            demonstrationIndex++;
+            StartCoroutine(UpdateDemonstration(demonstrationIndex));
         }
 
     void gotToPrevStep()
         {
-           demonstrationIndex--;
-           StartCoroutine(UpdateDemonstration(demonstrationIndex));
+            // StopAllCoroutines();
+            demonstrationIndex--;
+            StartCoroutine(UpdateDemonstration(demonstrationIndex));
         }      
 
     private IEnumerator UpdateDemonstration(int demonstrationIndex)
