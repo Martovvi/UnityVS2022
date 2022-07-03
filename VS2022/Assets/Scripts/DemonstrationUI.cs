@@ -5,15 +5,16 @@ using TMPro;
 
 public class DemonstrationUI : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private TextMeshProUGUI instructionLabel;
+
+    private void Awake()
     {
-        
+        instructionLabel.SetText("");
     }
 
-    // Update is called once per frame
-    void Update()
+
+    public void DisplayInstruction(string instruction)
     {
-        
+        instructionLabel.SetText(instruction);
     }
 }
