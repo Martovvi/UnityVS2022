@@ -5,10 +5,10 @@ using UnityEngine.Playables;
 
 public class ObjectAppear : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> objectToAppear;
+    [SerializeField] private GameObject objectToAppear;
 
-    public void MakeObjectAppear(int index)
+    public void MakeObjectAppear()
     {
-        objectToAppear[index].SetActive(true);
+        objectToAppear.SetActive(true);
     }
 }

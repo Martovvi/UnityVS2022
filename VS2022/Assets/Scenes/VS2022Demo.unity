@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.938
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1611810636}
-  m_IndirectSpecularColor: {r: 0.23498704, g: 0.13866128, b: 0.111152105, a: 0.938}
+  m_IndirectSpecularColor: {r: 0.23498672, g: 0.13866077, b: 0.11115168, a: 0.938}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1575,7 +1575,6 @@ GameObject:
   - component: {fileID: 354491692}
   - component: {fileID: 354491691}
   - component: {fileID: 354491690}
-  - component: {fileID: 354491694}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -1668,19 +1667,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &354491694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 354491689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34175f28dac74984d85ac577cc13f997, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  instructionLabel: {fileID: 2039359347}
 --- !u!1001 &359522943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3863,8 +3849,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 0
-  m_DragThreshold: 465
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1001 &653439895
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7665,7 +7651,6 @@ GameObject:
   - component: {fileID: 1292613334}
   - component: {fileID: 1292613333}
   - component: {fileID: 1292613332}
-  - component: {fileID: 1292613337}
   m_Layer: 0
   m_Name: Booze
   m_TagString: Untagged
@@ -7685,8 +7670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e64d3165b1f58148ab3bca938d424f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToAppear:
-  - {fileID: 1292613331}
+  objectToAppear: {fileID: 1292613331}
 --- !u!136 &1292613333
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7766,19 +7750,6 @@ Transform:
   m_Father: {fileID: 4151436659617994341}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &1292613337
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1292613331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01b72bee798dcc4baf63d0ebd8531ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToDisappear: {fileID: 1292613331}
 --- !u!4 &1309414169 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 46a452efdc3f0b94d9ddaa7993e9b2a2,
@@ -7913,7 +7884,6 @@ GameObject:
   - component: {fileID: 1318229671}
   - component: {fileID: 1318229670}
   - component: {fileID: 1318229673}
-  - component: {fileID: 1318229674}
   m_Layer: 0
   m_Name: PreBooze
   m_TagString: Untagged
@@ -7929,7 +7899,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1318229668}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.087}
+  m_LocalPosition: {x: -1.5577e-10, y: -0, z: -0.087}
   m_LocalScale: {x: 0.2127429, y: 0.0029699043, z: 0.2127429}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8012,21 +7982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e64d3165b1f58148ab3bca938d424f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToAppear:
-  - {fileID: 1318229668}
---- !u!114 &1318229674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1318229668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01b72bee798dcc4baf63d0ebd8531ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToDisappear: {fileID: 1318229668}
+  objectToAppear: {fileID: 1318229668}
 --- !u!4 &1338156071 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b1dd6cab84610f24aad4ecbd6e75ac5d,
@@ -17265,30 +17221,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2096155367}
-  - component: {fileID: 2096155368}
+  - component: {fileID: 2096155366}
   m_Layer: 0
   m_Name: DemonstrationManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2096155367
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2096155365}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.9679976, y: 10.790039, z: 9.172577}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2096155368
+  m_IsActive: 0
+--- !u!114 &2096155366
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -17300,843 +17241,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44ca93118a3b18a40bf23863a0e6b12a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ui: {fileID: 354491694}
-  nextButton: {fileID: 1243075379}
-  prevButton: {fileID: 1158492340}
+  ui: {fileID: 0}
+  nextButton: {fileID: 0}
+  prevButton: {fileID: 0}
   demonstrations:
-  - Instruction: "Wasser einf\xFCllen"
+  - Instruction: 
     OnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 6704808176904391611}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 8941860718582572995}
-          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
-          m_MethodName: StartAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Move Beaker
-            m_BoolArgument: 0
-          m_CallState: 2
-    OnEnd:
       m_PersistentCalls:
         m_Calls: []
-  - Instruction: "Zucker einf\xFCllen"
-    OnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 8941860718582572994}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 8654858001566675686}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 6704808176904391612}
-          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
-          m_MethodName: StartAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Move SugarCup
-            m_BoolArgument: 0
-          m_CallState: 2
-    OnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - Instruction: "Hefe einf\xFCllen"
-    OnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 6438018260590922531}
-          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
-          m_MethodName: StartAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 2
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 6704808176904391611}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 8654858001566675687}
-          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
-          m_MethodName: StartAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Move Bowl
-            m_BoolArgument: 0
-          m_CallState: 2
-    OnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - Instruction: Deckel aufsetzen
-    OnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 8654858001566675686}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 6438018260590922531}
-          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
-          m_MethodName: StartAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Move Cap
-            m_BoolArgument: 0
-          m_CallState: 2
-    OnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - Instruction: Warten
-    OnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 6438018260590922530}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 8107968920837232513}
-          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
-          m_MethodName: StartAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    OnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - Instruction: Brennblase aufstellen
-    OnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 6438018260590922530}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 8107968920837232513}
-          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
-          m_MethodName: StartAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Move Potstill
-            m_BoolArgument: 0
-          m_CallState: 2
-    OnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - Instruction: Deckel abnehmen
-    OnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 4222036285929136065}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 8107968920837232512}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 6438018260590922531}
-          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
-          m_MethodName: StartAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: Move CapBack
-            m_BoolArgument: 0
-          m_CallState: 2
-    OnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - Instruction: "Maische umf\xFCllen"
-    OnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 6438018260590922530}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 9077778274087009506}
-          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
-          m_MethodName: StartAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 4222036285929136066}
-          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
-          m_MethodName: StartAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Move MashBucket
-            m_BoolArgument: 0
-          m_CallState: 2
-    OnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - Instruction: Mit Helm verschliessen
-    OnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 8923763999356925616}
-          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
-          m_MethodName: StartAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 2
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 4222036285929136065}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 9077778274087009506}
-          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
-          m_MethodName: StartAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Move Helmet
-            m_BoolArgument: 0
-          m_CallState: 2
-    OnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - Instruction: "K\xFChler aufstellen"
-    OnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 8273802254154211871}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 9077778274087009505}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 8923763999356925616}
-          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
-          m_MethodName: StartAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Move CoolingTank
-            m_BoolArgument: 0
-          m_CallState: 2
-    OnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - Instruction: Schraube festdrehen
-    OnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 8047490994182453455}
-          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
-          m_MethodName: StartAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 8923763999356925615}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 8273802254154211872}
-          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
-          m_MethodName: StartAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Rotate Nut
-            m_BoolArgument: 0
-          m_CallState: 2
-    OnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - Instruction: "Wasserableitung anst\xF6pseln"
-    OnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 8811592841478858422}
-          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
-          m_MethodName: StartAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 8273802254154211871}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 8047490994182453455}
-          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
-          m_MethodName: StartAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Move TubeUp
-            m_BoolArgument: 0
-          m_CallState: 2
-    OnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - Instruction: "Wasserzuleitung anst\xF6pseln"
-    OnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 8481868002061159336}
-          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
-          m_MethodName: StartAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 8047490994182453454}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 8811592841478858422}
-          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
-          m_MethodName: StartAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Move TubeDown
-            m_BoolArgument: 0
-          m_CallState: 2
-    OnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - Instruction: Brenner aufstellen
-    OnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2526428937153535876}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 8481868002061159333}
-          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-          m_MethodName: set_enabled
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 5280903759475425273}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 8811592841478858421}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 8481868002061159336}
-          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
-          m_MethodName: StartAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Move Burner
-            m_BoolArgument: 0
-          m_CallState: 2
-    OnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - Instruction: "Brenner entz\xFCnden"
-    OnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 8923763999356925615}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 8481868002061159335}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 2526428937153535877}
-          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
-          m_MethodName: StartAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Move Lighter
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 8481868002061159333}
-          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-          m_MethodName: set_enabled
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 5280903759475425274}
-          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
-          m_MethodName: StartAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Raise Pointer
-            m_BoolArgument: 1
-          m_CallState: 2
-    OnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - Instruction: Wasserpumpe anstellen
-    OnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 6886713078011628620}
-          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
-          m_MethodName: StartAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 2
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 2526428937153535876}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 8923763999356925616}
-          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
-          m_MethodName: StartAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: Raise Water
-            m_BoolArgument: 0
-          m_CallState: 2
-    OnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - Instruction: "Auffangbeh\xE4lter aufstellen"
-    OnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1318229674}
-          m_TargetAssemblyTypeName: ObjectDisappear, Assembly-CSharp
-          m_MethodName: MakeObjectDisappear
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 8923763999356925615}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 6886713078011628620}
-          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
-          m_MethodName: StartAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Move Cup
-            m_BoolArgument: 0
-          m_CallState: 2
-    OnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - Instruction: Abwarten
-    OnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 6886713078011628618}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 6886713078011628618}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1318229673}
-          m_TargetAssemblyTypeName: ObjectAppear, Assembly-CSharp
-          m_MethodName: MakeObjectAppear
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    OnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - Instruction: Vorlauf abgiessen
-    OnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1292613337}
-          m_TargetAssemblyTypeName: ObjectDisappear, Assembly-CSharp
-          m_MethodName: MakeObjectDisappear
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 6886713078011628620}
-          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
-          m_MethodName: StartAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: Empty Cup
-            m_BoolArgument: 0
-          m_CallState: 2
-    OnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - Instruction: Erneut warten
-    OnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 6886713078011628618}
-          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
-          m_MethodName: StopAnim
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1292613332}
-          m_TargetAssemblyTypeName: ObjectAppear, Assembly-CSharp
-          m_MethodName: MakeObjectAppear
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
     OnEnd:
       m_PersistentCalls:
         m_Calls: []
@@ -18403,9 +17515,6 @@ GameObject:
   - component: {fileID: 8923763999356925611}
   - component: {fileID: 8923763999356925612}
   - component: {fileID: 8923763999356925613}
-  - component: {fileID: 8923763999356925614}
-  - component: {fileID: 8923763999356925615}
-  - component: {fileID: 8923763999356925616}
   m_Layer: 0
   m_Name: CoolingTank
   m_TagString: Untagged
@@ -19839,8 +18948,6 @@ GameObject:
   - component: {fileID: 2526428937153535871}
   - component: {fileID: 2526428937153535873}
   - component: {fileID: 2526428937153535875}
-  - component: {fileID: 2526428937153535876}
-  - component: {fileID: 2526428937153535877}
   m_Layer: 0
   m_Name: lighter
   m_TagString: Untagged
@@ -19878,8 +18985,6 @@ GameObject:
   - component: {fileID: 1775286040885655844}
   - component: {fileID: 5280903759475425271}
   - component: {fileID: 5280903759475425272}
-  - component: {fileID: 5280903759475425273}
-  - component: {fileID: 5280903759475425274}
   m_Layer: 0
   m_Name: Thermometer
   m_TagString: Untagged
@@ -19903,9 +19008,6 @@ GameObject:
   - component: {fileID: 4222036285929136062}
   - component: {fileID: 4222036285929136061}
   - component: {fileID: 4222036285929136063}
-  - component: {fileID: 4222036285929136064}
-  - component: {fileID: 4222036285929136065}
-  - component: {fileID: 4222036285929136066}
   m_Layer: 0
   m_Name: MashBucket
   m_TagString: Untagged
@@ -20037,7 +19139,7 @@ Animator:
   m_GameObject: {fileID: 2300115113219361377}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 36a321b9a0eedc141a958faae6624d4b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1ac5de167186cc14ea7348871516e735, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -20060,34 +19162,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 43217556}
---- !u!114 &2526428937153535876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2300115113219361377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - LighterMove
---- !u!114 &2526428937153535877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2300115113219361377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - LighterMove
 --- !u!4 &2541432774291076356
 Transform:
   m_ObjectHideFlags: 0
@@ -20210,8 +19284,6 @@ GameObject:
   - component: {fileID: 8107968920837232508}
   - component: {fileID: 8107968920837232510}
   - component: {fileID: 8107968920837232511}
-  - component: {fileID: 8107968920837232512}
-  - component: {fileID: 8107968920837232513}
   m_Layer: 6
   m_Name: PotStill
   m_TagString: Untagged
@@ -20290,9 +19362,9 @@ GameObject:
   - component: {fileID: 8273802254154211866}
   - component: {fileID: 1854435266182841107}
   - component: {fileID: 8273802254154211867}
+  - component: {fileID: 8273802254154211868}
+  - component: {fileID: 8273802254154211869}
   - component: {fileID: 8273802254154211870}
-  - component: {fileID: 8273802254154211871}
-  - component: {fileID: 8273802254154211872}
   m_Layer: 0
   m_Name: Nut
   m_TagString: Untagged
@@ -20372,8 +19444,6 @@ GameObject:
   - component: {fileID: 8481868002061159332}
   - component: {fileID: 8481868002061159333}
   - component: {fileID: 8481868002061159334}
-  - component: {fileID: 8481868002061159335}
-  - component: {fileID: 8481868002061159336}
   m_Layer: 0
   m_Name: Burner
   m_TagString: Untagged
@@ -20436,11 +19506,8 @@ GameObject:
   - component: {fileID: 3935325168247655861}
   - component: {fileID: 6704808176904391604}
   - component: {fileID: 6704808176904391607}
-  - component: {fileID: 6704808176904391612}
   - component: {fileID: 6704808176904391608}
   - component: {fileID: 6704808176904391609}
-  - component: {fileID: 6704808176904391610}
-  - component: {fileID: 6704808176904391611}
   m_Layer: 0
   m_Name: SugarCup
   m_TagString: Untagged
@@ -20749,7 +19816,7 @@ Animator:
   m_GameObject: {fileID: 2420495485290823277}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e9304ab4bbbecce45b220b7082af9fb1, type: 2}
+  m_Controller: {fileID: 9100000, guid: c4b67c78b58cfe94bbcf02d60fee484e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -20798,48 +19865,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 1995130167}
---- !u!114 &4222036285929136064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2420495485290823277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e64d3165b1f58148ab3bca938d424f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToAppear:
-  - {fileID: 2655001967609230932}
---- !u!114 &4222036285929136065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2420495485290823277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - MashBucketMove
---- !u!114 &4222036285929136066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2420495485290823277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - MashBucketMove
 --- !u!4 &4235878503867073624
 Transform:
   m_ObjectHideFlags: 0
@@ -21210,8 +20235,6 @@ GameObject:
   - component: {fileID: 6438018260590922527}
   - component: {fileID: 6438018260590922526}
   - component: {fileID: 6438018260590922528}
-  - component: {fileID: 6438018260590922530}
-  - component: {fileID: 6438018260590922531}
   m_Layer: 0
   m_Name: Cap
   m_TagString: Untagged
@@ -21439,7 +20462,7 @@ Animator:
   m_GameObject: {fileID: 2330456155652194586}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 704cd06dd4bda4b428b8600f5f54e661, type: 2}
+  m_Controller: {fileID: 9100000, guid: 88acf0536ad8afa4f8e073ab1790996e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -21449,34 +20472,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5280903759475425273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2330456155652194586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - PointerRotate
---- !u!114 &5280903759475425274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2330456155652194586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - PointerRotate
 --- !u!1 &5284790720823555362
 GameObject:
   m_ObjectHideFlags: 0
@@ -21489,10 +20484,10 @@ GameObject:
   - component: {fileID: 5579664660159124722}
   - component: {fileID: 1644573603419584884}
   - component: {fileID: 8811592841478858416}
+  - component: {fileID: 8811592841478858417}
+  - component: {fileID: 8811592841478858418}
   - component: {fileID: 8811592841478858419}
   - component: {fileID: 8811592841478858420}
-  - component: {fileID: 8811592841478858421}
-  - component: {fileID: 8811592841478858422}
   m_Layer: 0
   m_Name: TubeDown
   m_TagString: Untagged
@@ -21653,7 +20648,7 @@ Transform:
   - {fileID: 5370805675632128595}
   m_Father: {fileID: 5250192253562658141}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: -165.96826, y: -78.04519, z: 170.9412}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 92.896}
 --- !u!33 &5756634867498437009
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -21719,9 +20714,6 @@ GameObject:
   - component: {fileID: 8654858001566675682}
   - component: {fileID: 8654858001566675683}
   - component: {fileID: 8654858001566675684}
-  - component: {fileID: 8654858001566675685}
-  - component: {fileID: 8654858001566675686}
-  - component: {fileID: 8654858001566675687}
   m_Layer: 0
   m_Name: Bowl
   m_TagString: Untagged
@@ -21885,7 +20877,7 @@ Animator:
   m_GameObject: {fileID: 4947702745490527867}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 824ac15d8cfb61d4c81e1fe162e6d310, type: 2}
+  m_Controller: {fileID: 9100000, guid: d2881bf5597826c4ba44920475aeca85, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -21907,8 +20899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e64d3165b1f58148ab3bca938d424f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToAppear:
-  - {fileID: 2655001967609230932}
+  objectToAppear: {fileID: 2655001967609230932}
 --- !u!114 &6438018260590922527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21935,37 +20926,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 630766315}
---- !u!114 &6438018260590922530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4947702745490527867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - CapMove
-  - CapMoveBack
---- !u!114 &6438018260590922531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4947702745490527867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - CapMove
-  - CapMoveBack
-  - Idle
 --- !u!23 &6474569424012491101
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22149,8 +21109,6 @@ GameObject:
   - component: {fileID: 9077778274087009501}
   - component: {fileID: 9077778274087009503}
   - component: {fileID: 9077778274087009504}
-  - component: {fileID: 9077778274087009505}
-  - component: {fileID: 9077778274087009506}
   m_Layer: 0
   m_Name: Helmet
   m_TagString: Untagged
@@ -22190,7 +21148,7 @@ Animator:
   m_GameObject: {fileID: 3442748483682333652}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c62aa44f82e8604da7f11ed5497315f, type: 2}
+  m_Controller: {fileID: 9100000, guid: 00d03a88887c29442b4998e3826fb73e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -22226,48 +21184,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 1452478766}
---- !u!114 &6704808176904391610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3442748483682333652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e64d3165b1f58148ab3bca938d424f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToAppear:
-  - {fileID: 4738701477097515241}
---- !u!114 &6704808176904391611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3442748483682333652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - SugarCupMove
---- !u!114 &6704808176904391612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3442748483682333652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - SugarCupMove
 --- !u!4 &6734644371771803138
 Transform:
   m_ObjectHideFlags: 0
@@ -22485,9 +21401,6 @@ GameObject:
   - component: {fileID: 6886713078011628614}
   - component: {fileID: 6886713078011628615}
   - component: {fileID: 6886713078011628616}
-  - component: {fileID: 6886713078011628617}
-  - component: {fileID: 6886713078011628618}
-  - component: {fileID: 6886713078011628620}
   m_Layer: 0
   m_Name: Cup
   m_TagString: Untagged
@@ -22505,7 +21418,7 @@ Animator:
   m_GameObject: {fileID: 6886713078011628609}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 911c3ced3571bd1429d0ec74c14b2f6a, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2ac60c9c1bf0ddf46875e85930d433fe, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -22555,51 +21468,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToDisappear: {fileID: 1318229668}
---- !u!114 &6886713078011628617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6886713078011628609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e64d3165b1f58148ab3bca938d424f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToAppear:
-  - {fileID: 1318229668}
---- !u!114 &6886713078011628618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6886713078011628609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - CupMove
-  - CupEmpty
---- !u!114 &6886713078011628620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6886713078011628609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - CupMove
-  - CupEmpty
-  - Idle
 --- !u!1 &6964342181993611344
 GameObject:
   m_ObjectHideFlags: 0
@@ -23084,10 +21952,10 @@ GameObject:
   - component: {fileID: 3224134318008429695}
   - component: {fileID: 6474569424012491101}
   - component: {fileID: 8047490994182453449}
+  - component: {fileID: 8047490994182453450}
+  - component: {fileID: 8047490994182453451}
   - component: {fileID: 8047490994182453452}
   - component: {fileID: 8047490994182453453}
-  - component: {fileID: 8047490994182453454}
-  - component: {fileID: 8047490994182453455}
   m_Layer: 0
   m_Name: TubeUp
   m_TagString: Untagged
@@ -23109,6 +21977,31 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5982726700455068330, guid: e53a30ca8c6cc2347a3f098f0bca949d, type: 3}
+--- !u!114 &8047490994182453450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8047490994182453448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57b414ee6f1b65e42965beb9734673cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8047490994182453451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8047490994182453448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77b773d0eeb67194aa30d5143f3f9575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightMaterial: {fileID: 2100000, guid: cb8d25c9088804549ad78821b99aa2e1, type: 2}
 --- !u!95 &8047490994182453452
 Animator:
   serializedVersion: 4
@@ -23119,7 +22012,7 @@ Animator:
   m_GameObject: {fileID: 8047490994182453448}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 10098376f44dd284485fa6c9ad5c2cfc, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2bb1146d06c422146b1b6c37398719e9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -23142,35 +22035,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 363113590}
---- !u!114 &8047490994182453454
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8047490994182453448}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - TubeUpMove
---- !u!114 &8047490994182453455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8047490994182453448}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - TubeUpMove
-  - Idle
 --- !u!33 &8071812335791535221
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -23219,7 +22083,7 @@ Animator:
   m_GameObject: {fileID: 2774721611890493739}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6cb5253bf7e8a19408a7faac26505013, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9dd1c8004667e2c4cadd7a14589bde35, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -23242,35 +22106,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 1642329366}
---- !u!114 &8107968920837232512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2774721611890493739}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - PotStillMove
---- !u!114 &8107968920837232513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2774721611890493739}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - PotStillMove
-  - Idle
 --- !u!33 &8149812722257733849
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -23419,6 +22254,31 @@ CapsuleCollider:
   m_Height: 0.32592094
   m_Direction: 1
   m_Center: {x: 0.005041838, y: -0.000007778404, z: 0.0038337705}
+--- !u!114 &8273802254154211868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2982757055439859870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57b414ee6f1b65e42965beb9734673cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8273802254154211869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2982757055439859870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77b773d0eeb67194aa30d5143f3f9575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightMaterial: {fileID: 2100000, guid: cb8d25c9088804549ad78821b99aa2e1, type: 2}
 --- !u!95 &8273802254154211870
 Animator:
   serializedVersion: 4
@@ -23429,7 +22289,7 @@ Animator:
   m_GameObject: {fileID: 2982757055439859870}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7fcae3ea94df5884a92392129943e488, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5e2de57ff525d9d4eb3016a8638b569b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -23439,34 +22299,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8273802254154211871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2982757055439859870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - NutRotate
---- !u!114 &8273802254154211872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2982757055439859870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - NutRotate
 --- !u!1 &8319504915771459218
 GameObject:
   m_ObjectHideFlags: 0
@@ -23567,7 +22399,7 @@ Animator:
   m_GameObject: {fileID: 3308170875951189699}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7949b0cf32b888546a5db07f30da3ca4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3876325653b1f4048bf1b85839d83e5a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -23604,35 +22436,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 1200855326}
---- !u!114 &8481868002061159335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3308170875951189699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - BurnerMove
---- !u!114 &8481868002061159336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3308170875951189699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - BurnerMove
-  - Idle
 --- !u!1 &8600765185404337411
 GameObject:
   m_ObjectHideFlags: 0
@@ -23650,8 +22453,6 @@ GameObject:
   - component: {fileID: 8941860718582572991}
   - component: {fileID: 8941860718582572992}
   - component: {fileID: 8941860718582572993}
-  - component: {fileID: 8941860718582572994}
-  - component: {fileID: 8941860718582572995}
   m_Layer: 0
   m_Name: Beaker
   m_TagString: Untagged
@@ -23674,7 +22475,7 @@ Transform:
   - {fileID: 546217159196981268}
   m_Father: {fileID: 5250192253562658141}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: -83.08569, y: 8.419687, z: -8.418283}
+  m_LocalEulerAnglesHint: {x: -55.589714, y: 41.999176, z: -41.99218}
 --- !u!136 &8654858001566675681
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -23699,7 +22500,7 @@ Animator:
   m_GameObject: {fileID: 5962591765184349151}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3ae0a96b493975e47ab6e01a38c14c1e, type: 2}
+  m_Controller: {fileID: 9100000, guid: a066b7dd9fdbcf5478578ba4f33268a1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -23735,48 +22536,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 70631544}
---- !u!114 &8654858001566675685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5962591765184349151}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e64d3165b1f58148ab3bca938d424f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToAppear:
-  - {fileID: 927562510521393838}
---- !u!114 &8654858001566675686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5962591765184349151}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - BowlMove
---- !u!114 &8654858001566675687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5962591765184349151}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - BowlMove
 --- !u!23 &8683737073179775553
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23940,6 +22699,31 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8264788928953507229, guid: e53a30ca8c6cc2347a3f098f0bca949d, type: 3}
+--- !u!114 &8811592841478858417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5284790720823555362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57b414ee6f1b65e42965beb9734673cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8811592841478858418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5284790720823555362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77b773d0eeb67194aa30d5143f3f9575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightMaterial: {fileID: 2100000, guid: cb8d25c9088804549ad78821b99aa2e1, type: 2}
 --- !u!95 &8811592841478858419
 Animator:
   serializedVersion: 4
@@ -23950,7 +22734,7 @@ Animator:
   m_GameObject: {fileID: 5284790720823555362}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a84b2925be9069c4ea87a6a8da67fd88, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6aadf54166ca13540bb54d9372192040, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -23973,35 +22757,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 1414275225}
---- !u!114 &8811592841478858421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5284790720823555362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - TubeDownMove
---- !u!114 &8811592841478858422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5284790720823555362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - TubeDownMove
-  - Idle
 --- !u!4 &8862694909425869969
 Transform:
   m_ObjectHideFlags: 0
@@ -24092,7 +22847,7 @@ Animator:
   m_GameObject: {fileID: 35541798992725366}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 091a15e4631ec534599f744128ef7bc4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 04ab7133e4307754aaafd6ab4a914268, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -24114,8 +22869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e64d3165b1f58148ab3bca938d424f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToAppear:
-  - {fileID: 1746670001}
+  objectToAppear: {fileID: 1746670001}
 --- !u!114 &8923763999356925613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24129,50 +22883,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 1224702339}
---- !u!114 &8923763999356925614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 35541798992725366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01b72bee798dcc4baf63d0ebd8531ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToDisappear: {fileID: 1746670001}
---- !u!114 &8923763999356925615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 35541798992725366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - CoolingTankMove
-  - CoolingWaterRising
---- !u!114 &8923763999356925616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 35541798992725366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - CoolingTankMove
-  - CoolingWaterRising
-  - Idle
 --- !u!4 &8941860718582572985
 Transform:
   m_ObjectHideFlags: 0
@@ -24188,7 +22898,7 @@ Transform:
   - {fileID: 8862694909425869969}
   m_Father: {fileID: 5250192253562658141}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -7.102, y: 89.998, z: -89.98}
 --- !u!64 &8941860718582572986
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24213,7 +22923,7 @@ Animator:
   m_GameObject: {fileID: 8600765185404337411}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 621ce9c91f3e5dc48ba0e1238c2d980f, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3a20117fee5b5484e8111b647e4f38ef, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -24261,9 +22971,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e64d3165b1f58148ab3bca938d424f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToAppear:
-  - {fileID: 991104096}
-  - {fileID: 8151894779922927493}
+  objectToAppear: {fileID: 991104096}
 --- !u!114 &8941860718582572993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24277,34 +22985,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 2101983458}
---- !u!114 &8941860718582572994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8600765185404337411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - BeakerMove
---- !u!114 &8941860718582572995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8600765185404337411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - BeakerMove
 --- !u!1 &8989474555077761589
 GameObject:
   m_ObjectHideFlags: 0
@@ -24395,7 +23075,7 @@ Animator:
   m_GameObject: {fileID: 6666603822081962134}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 44b3471ac7acf604288194192ac20d3a, type: 2}
+  m_Controller: {fileID: 9100000, guid: 53b03ab6d0df3ec48913be2868286769, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -24418,35 +23098,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 364121190}
---- !u!114 &9077778274087009505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6666603822081962134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - HelmetMove
---- !u!114 &9077778274087009506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6666603822081962134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animState:
-  - HelmetMove
-  - Idle
 --- !u!1 &9111276449392452216
 GameObject:
   m_ObjectHideFlags: 0
