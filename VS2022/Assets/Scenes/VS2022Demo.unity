@@ -573,7 +573,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7477797, y: 1}
+    m_SensorSize: {x: 1.4298401, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -644,7 +644,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7477797, y: 1}
+    m_SensorSize: {x: 1.4298401, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1092,7 +1092,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7477797, y: 1}
+    m_SensorSize: {x: 1.4298401, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1147,7 +1147,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7477797, y: 1}
+    m_SensorSize: {x: 1.4298401, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1956,7 +1956,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7477797, y: 1}
+    m_SensorSize: {x: 1.4298401, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2687,7 +2687,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7477797, y: 1}
+    m_SensorSize: {x: 1.4298401, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3056,7 +3056,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7477797, y: 1}
+    m_SensorSize: {x: 1.4298401, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3117,7 +3117,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7477797, y: 1}
+    m_SensorSize: {x: 1.4298401, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3954,7 +3954,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7477797, y: 1}
+    m_SensorSize: {x: 1.4298401, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -6099,7 +6099,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7477797, y: 1}
+    m_SensorSize: {x: 1.4298401, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -7652,7 +7652,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7477797, y: 1}
+    m_SensorSize: {x: 1.4298401, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -8951,7 +8951,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7477797, y: 1}
+    m_SensorSize: {x: 1.4298401, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -10331,7 +10331,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7477797, y: 1}
+    m_SensorSize: {x: 1.4298401, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -10531,7 +10531,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7477797, y: 1}
+    m_SensorSize: {x: 1.4298401, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -10959,7 +10959,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7477797, y: 1}
+    m_SensorSize: {x: 1.4298401, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -11109,7 +11109,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7477797, y: 1}
+    m_SensorSize: {x: 1.4298401, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -12172,7 +12172,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7477797, y: 1}
+    m_SensorSize: {x: 1.4298401, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -17982,7 +17982,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7477797, y: 1}
+    m_SensorSize: {x: 1.4298401, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -18144,7 +18144,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7477797, y: 1}
+    m_SensorSize: {x: 1.4298401, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -19600,7 +19600,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7477797, y: 1}
+    m_SensorSize: {x: 1.4298401, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -19923,7 +19923,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7477797, y: 1}
+    m_SensorSize: {x: 1.4298401, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -20153,6 +20153,18 @@ MonoBehaviour:
     OnStart:
       m_PersistentCalls:
         m_Calls:
+        - m_Target: {fileID: 680696617}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 6438018260590922531}
           m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
           m_MethodName: StartAnim
@@ -22570,6 +22582,7 @@ GameObject:
   - component: {fileID: 2505301847367286863}
   - component: {fileID: 369411203378050181}
   - component: {fileID: 2505301847367286865}
+  - component: {fileID: 2505301847367286866}
   m_Layer: 0
   m_Name: hangingClock
   m_TagString: Untagged
@@ -22862,6 +22875,19 @@ CapsuleCollider:
   m_Height: 0.40640002
   m_Direction: 1
   m_Center: {x: -0.00000023841858, y: 0.00000046938658, z: 0.010229232}
+--- !u!114 &2505301847367286866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2170899914786755920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a01b72bee798dcc4baf63d0ebd8531ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToDisappear: {fileID: 680696617}
 --- !u!33 &2526428937153535870
 MeshFilter:
   m_ObjectHideFlags: 0
