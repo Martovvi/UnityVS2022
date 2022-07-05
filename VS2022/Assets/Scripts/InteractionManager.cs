@@ -35,7 +35,7 @@ public class InteractionManager : MonoBehaviour, IInteractionListener
 
         currentInteraction = interactions[interactionIndex];
         stepCount = interactions.Count;
-        ui.DisplayInstruction("Schritt " + (interactionIndex + 1) + " / " + stepCount + ": " + currentInteraction.Instruction);
+        ui.DisplayInstruction("Schritt " + (interactionIndex + 1) + " / " + stepCount + " : " + currentInteraction.Instruction);
         helpButton.onClick.AddListener(showHelpMsg);
     }
 
@@ -148,7 +148,7 @@ public class InteractionManager : MonoBehaviour, IInteractionListener
         {
             currentInteraction = interactions[interactionIndex];
             // ToDo
-            ui.DisplayInstruction("Schritt " + (interactionIndex + 1) + " / " + stepCount + " " + currentInteraction.Instruction);
+            ui.DisplayInstruction("Schritt " + (interactionIndex + 1) + " / " + stepCount + " : " + currentInteraction.Instruction);
         }
         else
         {
