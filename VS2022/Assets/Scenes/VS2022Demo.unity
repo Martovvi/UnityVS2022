@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.938
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1611810636}
-  m_IndirectSpecularColor: {r: 0.23498672, g: 0.13866077, b: 0.11115168, a: 0.938}
+  m_IndirectSpecularColor: {r: 0.23498704, g: 0.13866128, b: 0.111152105, a: 0.938}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -573,7 +573,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.008208, y: 1}
+    m_SensorSize: {x: 1.2912966, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -644,7 +644,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.008208, y: 1}
+    m_SensorSize: {x: 1.2912966, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1092,7 +1092,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.008208, y: 1}
+    m_SensorSize: {x: 1.2912966, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1147,7 +1147,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.008208, y: 1}
+    m_SensorSize: {x: 1.2912966, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1956,7 +1956,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.008208, y: 1}
+    m_SensorSize: {x: 1.2912966, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2687,7 +2687,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.008208, y: 1}
+    m_SensorSize: {x: 1.2912966, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3056,7 +3056,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.008208, y: 1}
+    m_SensorSize: {x: 1.2912966, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3117,7 +3117,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.008208, y: 1}
+    m_SensorSize: {x: 1.2912966, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3954,7 +3954,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.008208, y: 1}
+    m_SensorSize: {x: 1.2912966, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -4720,6 +4720,104 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46a452efdc3f0b94d9ddaa7993e9b2a2, type: 3}
+--- !u!1 &680696617
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 680696618}
+  - component: {fileID: 680696621}
+  - component: {fileID: 680696620}
+  - component: {fileID: 680696619}
+  m_Layer: 0
+  m_Name: Mash
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &680696618
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680696617}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0.000000064564, y: 0, z: -0.056}
+  m_LocalScale: {x: 0.22639605, y: -0.018152276, z: 0.22639605}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3088488018831631575}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!136 &680696619
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680696617}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!23 &680696620
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680696617}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b223f1f95df23b441a0f0664ae6579df, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &680696621
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680696617}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &709953485
 GameObject:
   m_ObjectHideFlags: 0
@@ -6001,7 +6099,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.008208, y: 1}
+    m_SensorSize: {x: 1.2912966, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -7554,7 +7652,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.008208, y: 1}
+    m_SensorSize: {x: 1.2912966, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -8853,7 +8951,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.008208, y: 1}
+    m_SensorSize: {x: 1.2912966, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -10233,7 +10331,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.008208, y: 1}
+    m_SensorSize: {x: 1.2912966, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -10433,7 +10531,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.008208, y: 1}
+    m_SensorSize: {x: 1.2912966, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -10861,7 +10959,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.008208, y: 1}
+    m_SensorSize: {x: 1.2912966, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -11011,7 +11109,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.008208, y: 1}
+    m_SensorSize: {x: 1.2912966, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -12074,7 +12172,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.008208, y: 1}
+    m_SensorSize: {x: 1.2912966, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -17884,7 +17982,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.008208, y: 1}
+    m_SensorSize: {x: 1.2912966, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -18046,7 +18144,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.008208, y: 1}
+    m_SensorSize: {x: 1.2912966, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -19502,7 +19600,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.008208, y: 1}
+    m_SensorSize: {x: 1.2912966, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -19825,7 +19923,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.008208, y: 1}
+    m_SensorSize: {x: 1.2912966, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -20031,7 +20129,7 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 1
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -22656,6 +22754,7 @@ GameObject:
   - component: {fileID: 4222036285929136064}
   - component: {fileID: 4222036285929136065}
   - component: {fileID: 4222036285929136066}
+  - component: {fileID: 4222036285929136067}
   m_Layer: 0
   m_Name: MashBucket
   m_TagString: Untagged
@@ -23092,9 +23191,10 @@ Transform:
   m_Children:
   - {fileID: 991104100}
   - {fileID: 4031348296799523732}
+  - {fileID: 680696618}
   m_Father: {fileID: 5250192253562658141}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: -32.428726, y: -71.306404, z: 71.29451}
+  m_LocalEulerAnglesHint: {x: -17.346, y: -89.994, z: 89.979}
 --- !u!1 &3133689179267169612
 GameObject:
   m_ObjectHideFlags: 0
@@ -23352,7 +23452,7 @@ PlayableDirector:
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 725b161e67d250545a35930fd7d97b94, type: 2}
   m_InitialState: 0
-  m_WrapMode: 2
+  m_WrapMode: 0
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
@@ -23575,6 +23675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToAppear:
   - {fileID: 2655001967609230932}
+  - {fileID: 680696617}
 --- !u!114 &4222036285929136065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23603,6 +23704,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animState:
   - MashBucketMove
+--- !u!114 &4222036285929136067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2420495485290823277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a01b72bee798dcc4baf63d0ebd8531ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToDisappear: {fileID: 680696617}
 --- !u!4 &4235878503867073624
 Transform:
   m_ObjectHideFlags: 0
@@ -24416,7 +24530,7 @@ Transform:
   - {fileID: 5370805675632128595}
   m_Father: {fileID: 5250192253562658141}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: -165.96826, y: -78.04519, z: 170.9412}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 92.896}
 --- !u!33 &5756634867498437009
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -24672,6 +24786,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToAppear:
   - {fileID: 2655001967609230932}
+  - {fileID: 680696617}
 --- !u!114 &6438018260590922527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25003,6 +25118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToAppear:
   - {fileID: 4738701477097515241}
+  - {fileID: 927562510521393838}
 --- !u!114 &6704808176904391611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25708,7 +25824,7 @@ PlayableDirector:
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: d55c232c1e8a8ce4c93f22541aba0432, type: 2}
   m_InitialState: 0
-  m_WrapMode: 2
+  m_WrapMode: 0
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
@@ -26415,6 +26531,7 @@ GameObject:
   - component: {fileID: 8941860718582572993}
   - component: {fileID: 8941860718582572994}
   - component: {fileID: 8941860718582572995}
+  - component: {fileID: 8941860718582572996}
   m_Layer: 0
   m_Name: Beaker
   m_TagString: Untagged
@@ -26437,7 +26554,7 @@ Transform:
   - {fileID: 546217159196981268}
   m_Father: {fileID: 5250192253562658141}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: -83.08569, y: 8.419687, z: -8.418283}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
 --- !u!136 &8654858001566675681
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -26526,6 +26643,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animState:
   - BowlMove
+  - BowlStopped
 --- !u!114 &8654858001566675687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27027,6 +27145,7 @@ MonoBehaviour:
   objectToAppear:
   - {fileID: 991104096}
   - {fileID: 8151894779922927493}
+  - {fileID: 4738701477097515241}
 --- !u!114 &8941860718582572993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27068,6 +27187,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animState:
   - BeakerMove
+--- !u!114 &8941860718582572996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8600765185404337411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a01b72bee798dcc4baf63d0ebd8531ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToDisappear: {fileID: 991104096}
 --- !u!1 &8989474555077761589
 GameObject:
   m_ObjectHideFlags: 0
