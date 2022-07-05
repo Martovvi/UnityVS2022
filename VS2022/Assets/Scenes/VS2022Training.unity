@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.938
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1611810636}
-  m_IndirectSpecularColor: {r: 0.23498672, g: 0.13866077, b: 0.11115168, a: 0.938}
+  m_IndirectSpecularColor: {r: 0.23498704, g: 0.13866128, b: 0.111152105, a: 0.938}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -20546,8 +20546,8 @@ MonoBehaviour:
   helpButton: {fileID: 1491914762}
   interactions:
   - Interactable: {fileID: 8941860718582572987}
-    Instruction: Gib ein Liter Wasser in den Maischeeimer
-    HelpMsg: "Wasser ist eine durchsichtige Fl\xFCssigkeit."
+    Instruction: Gib einen Liter Wasser in den Maischeeimer
+    HelpMsg: Wasser findet sich in einem Messbecher
     ErrorMsg: 
     Duration: 7
     OnStart:
@@ -20570,7 +20570,7 @@ MonoBehaviour:
         m_Calls: []
   - Interactable: {fileID: 6704808176904391605}
     Instruction: "F\xFClle 600g Zucker in den Maischeeimer"
-    HelpMsg: "Das Pulver ist wei\xDF und der Beh\xE4lter ist beschriftet."
+    HelpMsg: "Zucker ist ein wei\xDFes Pulver"
     ErrorMsg: 
     Duration: 4
     OnStart:
@@ -20593,7 +20593,7 @@ MonoBehaviour:
         m_Calls: []
   - Interactable: {fileID: 8654858001566675679}
     Instruction: Gib 18g Turbohefe in den Maischeeimer hinzu
-    HelpMsg: "Br\xE4unlich und in der N\xE4he des Zuckers auffindbar."
+    HelpMsg: "Br\xE4unlich und in der N\xE4he des Zuckers auffindbar"
     ErrorMsg: 
     Duration: 4
     OnStart:
@@ -20616,7 +20616,7 @@ MonoBehaviour:
         m_Calls: []
   - Interactable: {fileID: 6438018260590922523}
     Instruction: "Verschlie\xDFe den Eimer"
-    HelpMsg: "Der Deckel ist Kreisf\xF6rmig."
+    HelpMsg: "Ein Deckel wird hier ben\xF6tigt"
     ErrorMsg: 
     Duration: 1.2
     OnStart:
@@ -20638,8 +20638,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - Interactable: {fileID: 2505301847367286866}
-    Instruction: "Lassen den Inhalt im Eimer f\xFCr paar Stunden g\xE4ren"
-    HelpMsg: "Eine Uhr kann f\xFCr zeitbasierte Dinge verwendet werden."
+    Instruction: "Lasse den Inhalt im Eimer f\xFCr ein paar Stunden g\xE4ren"
+    HelpMsg: "Ein Blick auf die Uhr k\xF6nnte hier helfen"
     ErrorMsg: 
     Duration: 0
     OnStart:
@@ -20650,7 +20650,7 @@ MonoBehaviour:
         m_Calls: []
   - Interactable: {fileID: 8107968920837232507}
     Instruction: "Setze die Brennblase auf den St\xE4nder"
-    HelpMsg: "Die Brennblase ist volumin\xF6s."
+    HelpMsg: "Die Brennblase ist kesself\xF6rmig"
     ErrorMsg: 
     Duration: 1.5
     OnStart:
@@ -20673,7 +20673,7 @@ MonoBehaviour:
         m_Calls: []
   - Interactable: {fileID: 6438018260590922523}
     Instruction: Entferne den Deckel vom Maischeimer
-    HelpMsg: Der Deckel befindet sich auf dem Maischeeimer.
+    HelpMsg: Der Deckel befindet sich auf dem Maischeeimer
     ErrorMsg: 
     Duration: 1.2
     OnStart:
@@ -20696,7 +20696,7 @@ MonoBehaviour:
         m_Calls: []
   - Interactable: {fileID: 4222036285929136058}
     Instruction: "F\xFClle die Maische in die Brennblase"
-    HelpMsg: Direkt unter dem Deckel auffindbar.
+    HelpMsg: Die Maische befindet sich im Eimer
     ErrorMsg: 
     Duration: 9.5
     OnStart:
@@ -20719,7 +20719,7 @@ MonoBehaviour:
         m_Calls: []
   - Interactable: {fileID: 9077778274087009500}
     Instruction: "Verschlie\xDFe die Brennblase mit dem Helm"
-    HelpMsg: "Der Helm enth\xE4lt ein Thermometer."
+    HelpMsg: "Der Helm verf\xFCgt \xFCber ein Thermometer"
     ErrorMsg: 
     Duration: 1.5
     OnStart:
@@ -20742,7 +20742,7 @@ MonoBehaviour:
         m_Calls: []
   - Interactable: {fileID: 8923763999356925608}
     Instruction: "Stelle den K\xFChler auf"
-    HelpMsg: "Der K\xFChler sieht spiralf\xF6rmig aus."
+    HelpMsg: "Der K\xFChler sieht spiralf\xF6rmig aus"
     ErrorMsg: 
     Duration: 1.5
     OnStart:
@@ -20765,7 +20765,7 @@ MonoBehaviour:
         m_Calls: []
   - Interactable: {fileID: 8273802254154211868}
     Instruction: Verschraube die Zufuhr
-    HelpMsg: "Befindet sich zwischen Helm und K\xFChler."
+    HelpMsg: "Diese befindet sich zwischen Helm und K\xFChler"
     ErrorMsg: 
     Duration: 2
     OnStart:
@@ -20788,7 +20788,7 @@ MonoBehaviour:
         m_Calls: []
   - Interactable: {fileID: 8047490994182453450}
     Instruction: Bringe die Wasserableitung an
-    HelpMsg: "Der Schlauch sollte nur zum Wassereimer f\xFChren."
+    HelpMsg: "Ein Schlauch mit losen Enden wird ben\xF6tigt"
     ErrorMsg: 
     Duration: 1.5
     OnStart:
@@ -20811,7 +20811,7 @@ MonoBehaviour:
         m_Calls: []
   - Interactable: {fileID: 8811592841478858417}
     Instruction: Bringe die Wasserzuleitung an
-    HelpMsg: Ein Schlauch, der noch mit etwas anderem angeschlossen ist.
+    HelpMsg: Ein Schlauch, der bereits mit einem Ende angeschlossen ist
     ErrorMsg: 
     Duration: 1.15
     OnStart:
@@ -20834,7 +20834,7 @@ MonoBehaviour:
         m_Calls: []
   - Interactable: {fileID: 8481868002061159329}
     Instruction: Stelle den Brenner auf
-    HelpMsg: Sieht zylindrisch aus mit einem Loch oben.
+    HelpMsg: "Sieht zylindrisch aus mit einer \xD6ffnung oben"
     ErrorMsg: 
     Duration: 1.5
     OnStart:
@@ -20857,7 +20857,7 @@ MonoBehaviour:
         m_Calls: []
   - Interactable: {fileID: 2526428937153535874}
     Instruction: "Entz\xFCnde den Brenner"
-    HelpMsg: Benutze das Feuerzeug, das auf dem Tisch liegt.
+    HelpMsg: "Ein Feuerzeug w\xFCrde sich eignen"
     ErrorMsg: 
     Duration: 2
     OnStart:
@@ -20916,7 +20916,7 @@ MonoBehaviour:
           m_CallState: 2
   - Interactable: {fileID: 6765147698628953338}
     Instruction: Stelle die Wasserpumpe an
-    HelpMsg: Es ist schwarz und von Wasser umgeben.
+    HelpMsg: Diese ist schwarz und von Wasser umgeben
     ErrorMsg: 
     Duration: 3
     OnStart:
@@ -20951,7 +20951,7 @@ MonoBehaviour:
           m_CallState: 2
   - Interactable: {fileID: 6886713078011628611}
     Instruction: "Stelle den Auffangbeh\xE4lter auf"
-    HelpMsg: Sieht aus wie eine Schale.
+    HelpMsg: Sieht aus wie eine Schale
     ErrorMsg: 
     Duration: 2.3
     OnStart:
@@ -20974,7 +20974,7 @@ MonoBehaviour:
         m_Calls: []
   - Interactable: {fileID: 2505301847367286866}
     Instruction: Warte einige Minuten
-    HelpMsg: "Eine Uhr kann f\xFCr zeitbasierte Dinge verwendet werden."
+    HelpMsg: "Ein Blick auf die Uhr k\xF6nnte hier helfen"
     ErrorMsg: 
     Duration: 0
     OnStart:
@@ -20997,7 +20997,8 @@ MonoBehaviour:
         m_Calls: []
   - Interactable: {fileID: 6886713078011628611}
     Instruction: "Gie\xDFe den Vorlauf ab (Achtung: giftig)"
-    HelpMsg: "Die Schale enth\xE4lt eine giftige Fl\xFCssigkeit."
+    HelpMsg: "Die Schale enth\xE4lt eine giftige Fl\xFCssigkeit mit bei\xDFendem
+      Geruch nach Klebstoff"
     ErrorMsg: 
     Duration: 6.3
     OnStart:
@@ -21020,7 +21021,7 @@ MonoBehaviour:
         m_Calls: []
   - Interactable: {fileID: 2505301847367286866}
     Instruction: "Warte erneut f\xFCr ein paar Stunden"
-    HelpMsg: "Eine Uhr kann f\xFCr zeitbasierte Dinge verwendet werden."
+    HelpMsg: "Ein Blick auf die Uhr k\xF6nnte hier helfen"
     ErrorMsg: 
     Duration: 0
     OnStart:
@@ -21042,8 +21043,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - Interactable: {fileID: 6886713078011628611}
-    Instruction: "Der Schnaps ist fertig zum Genie\xDFen!"
-    HelpMsg: "Es ist eine Schale mit einer leckeren Fl\xFCssigkeit!"
+    Instruction: Entnehme den Schnaps
+    HelpMsg: "Der Schnaps in der Schale ist fertig zum Genie\xDFen"
     ErrorMsg: 
     Duration: 0
     OnStart:
