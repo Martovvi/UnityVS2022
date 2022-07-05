@@ -573,7 +573,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2912966, y: 1}
+    m_SensorSize: {x: 1.7477797, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -644,7 +644,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2912966, y: 1}
+    m_SensorSize: {x: 1.7477797, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1092,7 +1092,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2912966, y: 1}
+    m_SensorSize: {x: 1.7477797, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1147,7 +1147,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2912966, y: 1}
+    m_SensorSize: {x: 1.7477797, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1956,7 +1956,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2912966, y: 1}
+    m_SensorSize: {x: 1.7477797, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2687,7 +2687,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2912966, y: 1}
+    m_SensorSize: {x: 1.7477797, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3056,7 +3056,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2912966, y: 1}
+    m_SensorSize: {x: 1.7477797, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3117,7 +3117,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2912966, y: 1}
+    m_SensorSize: {x: 1.7477797, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3954,7 +3954,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2912966, y: 1}
+    m_SensorSize: {x: 1.7477797, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -6099,7 +6099,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2912966, y: 1}
+    m_SensorSize: {x: 1.7477797, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -7652,7 +7652,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2912966, y: 1}
+    m_SensorSize: {x: 1.7477797, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -8951,7 +8951,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2912966, y: 1}
+    m_SensorSize: {x: 1.7477797, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -10331,7 +10331,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2912966, y: 1}
+    m_SensorSize: {x: 1.7477797, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -10531,7 +10531,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2912966, y: 1}
+    m_SensorSize: {x: 1.7477797, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -10959,7 +10959,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2912966, y: 1}
+    m_SensorSize: {x: 1.7477797, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -11109,7 +11109,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2912966, y: 1}
+    m_SensorSize: {x: 1.7477797, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -12172,7 +12172,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2912966, y: 1}
+    m_SensorSize: {x: 1.7477797, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -17982,7 +17982,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2912966, y: 1}
+    m_SensorSize: {x: 1.7477797, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -18144,7 +18144,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2912966, y: 1}
+    m_SensorSize: {x: 1.7477797, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -19600,7 +19600,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2912966, y: 1}
+    m_SensorSize: {x: 1.7477797, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -19923,7 +19923,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2912966, y: 1}
+    m_SensorSize: {x: 1.7477797, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -20075,7 +20075,7 @@ MonoBehaviour:
   nextButton: {fileID: 1243075379}
   prevButton: {fileID: 1158492340}
   demonstrations:
-  - Instruction: Ein Liter Wasser wird in den Maischeeimer hinzugegeben
+  - Instruction: Ein Liter Wasser wird in den Maischeeimer hineingegeben
     OnStart:
       m_PersistentCalls:
         m_Calls:
@@ -20192,7 +20192,7 @@ MonoBehaviour:
     OnEnd:
       m_PersistentCalls:
         m_Calls: []
-  - Instruction: Der Eimer wird verschlossen
+  - Instruction: "Der Eimer wird nun f\xFCr den G\xE4rvorgang verschlossen"
     OnStart:
       m_PersistentCalls:
         m_Calls:
@@ -20223,7 +20223,8 @@ MonoBehaviour:
     OnEnd:
       m_PersistentCalls:
         m_Calls: []
-  - Instruction: "Es wird f\xFCr ein paar Stunden gewartet"
+  - Instruction: "Es wird f\xFCr ein paar Stunden gewartet, damit die Maische g\xE4ren
+      kann"
     OnStart:
       m_PersistentCalls:
         m_Calls:
@@ -20254,7 +20255,7 @@ MonoBehaviour:
     OnEnd:
       m_PersistentCalls:
         m_Calls: []
-  - Instruction: Die Brennblase wird aufgestellt
+  - Instruction: Die Brennblase wird nun aufgestellt
     OnStart:
       m_PersistentCalls:
         m_Calls:
@@ -20371,7 +20372,7 @@ MonoBehaviour:
     OnEnd:
       m_PersistentCalls:
         m_Calls: []
-  - Instruction: Der Helm wird aufgesetzt
+  - Instruction: Der Helm wird aufgesetzt bis er einrastet
     OnStart:
       m_PersistentCalls:
         m_Calls:
@@ -20500,7 +20501,8 @@ MonoBehaviour:
     OnEnd:
       m_PersistentCalls:
         m_Calls: []
-  - Instruction: "Der Schlauch f\xFCr die Wasserableitung wird anst\xF6pselt"
+  - Instruction: "Der Schlauch f\xFCr die Wasserableitung wird angeschlossen um warmes
+      Wasser abzuleiten"
     OnStart:
       m_PersistentCalls:
         m_Calls:
@@ -20543,7 +20545,8 @@ MonoBehaviour:
     OnEnd:
       m_PersistentCalls:
         m_Calls: []
-  - Instruction: "Der Schlauch f\xFCr die Wasserzuleitung wird anst\xF6pselt"
+  - Instruction: "Der Schlauch f\xFCr die Wasserzuleitung wird angeschlossen um kaltes
+      Wasser in den Kreislauf zu f\xFChren"
     OnStart:
       m_PersistentCalls:
         m_Calls:
@@ -20586,7 +20589,7 @@ MonoBehaviour:
     OnEnd:
       m_PersistentCalls:
         m_Calls: []
-  - Instruction: Der Gasbrenner wird unter die Brennblase aufgestellt
+  - Instruction: Der Gasbrenner wird unter der Brennblase aufgestellt
     OnStart:
       m_PersistentCalls:
         m_Calls:
@@ -20677,7 +20680,8 @@ MonoBehaviour:
     OnEnd:
       m_PersistentCalls:
         m_Calls: []
-  - Instruction: "Der Gasbrenner wird entz\xFCndet"
+  - Instruction: "Der Gasbrenner wird nun entz\xFCndet um den Destilliervorgang zu
+      starten"
     OnStart:
       m_PersistentCalls:
         m_Calls:
@@ -20780,7 +20784,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - Instruction: Die Wasserpumpe wird eingeschaltet
+  - Instruction: Die Wasserpumpe wird eingeschaltet um den Wasserkreislauf zu starten
     OnStart:
       m_PersistentCalls:
         m_Calls:
@@ -20835,7 +20839,7 @@ MonoBehaviour:
     OnEnd:
       m_PersistentCalls:
         m_Calls: []
-  - Instruction: "Der Auffangbeh\xE4lter wird aufgestelt"
+  - Instruction: "Der Auffangbeh\xE4lter wird zum Auffangen des Destillats aufgestellt"
     OnStart:
       m_PersistentCalls:
         m_Calls:
@@ -20890,7 +20894,7 @@ MonoBehaviour:
     OnEnd:
       m_PersistentCalls:
         m_Calls: []
-  - Instruction: "Es wird f\xFCr ein paar Minuten gewartet"
+  - Instruction: "Es wird nun f\xFCr ein paar Minuten gewartet"
     OnStart:
       m_PersistentCalls:
         m_Calls:
@@ -20933,7 +20937,8 @@ MonoBehaviour:
     OnEnd:
       m_PersistentCalls:
         m_Calls: []
-  - Instruction: Der giftige Vorlauf wird abgegossen
+  - Instruction: Der giftige, nach Klebstoff riechende Vorlauf muss nun abgegossen
+      werden
     OnStart:
       m_PersistentCalls:
         m_Calls:
@@ -20964,7 +20969,8 @@ MonoBehaviour:
     OnEnd:
       m_PersistentCalls:
         m_Calls: []
-  - Instruction: "Es wird erneut f\xFCr ein paar Minuten gewartet"
+  - Instruction: "Es wird ein letztes Mal f\xFCr ein paar Minuten gewartet bis der
+      Destilliervorgang abgeschlossen ist"
     OnStart:
       m_PersistentCalls:
         m_Calls:
@@ -20995,7 +21001,8 @@ MonoBehaviour:
     OnEnd:
       m_PersistentCalls:
         m_Calls: []
-  - Instruction: "Der Schnaps ist fertig zum Genie\xDFen!"
+  - Instruction: "Der Schnaps ist nun fertig zum Genie\xDFen und kann abgef\xFCllt
+      werden"
     OnStart:
       m_PersistentCalls:
         m_Calls: []
