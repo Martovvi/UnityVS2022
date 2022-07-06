@@ -573,7 +573,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.4298401, y: 1}
+    m_SensorSize: {x: 1.5062166, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -644,7 +644,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.4298401, y: 1}
+    m_SensorSize: {x: 1.5062166, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1092,7 +1092,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.4298401, y: 1}
+    m_SensorSize: {x: 1.5062166, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1147,7 +1147,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.4298401, y: 1}
+    m_SensorSize: {x: 1.5062166, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1956,7 +1956,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.4298401, y: 1}
+    m_SensorSize: {x: 1.5062166, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2687,7 +2687,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.4298401, y: 1}
+    m_SensorSize: {x: 1.5062166, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3056,7 +3056,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.4298401, y: 1}
+    m_SensorSize: {x: 1.5062166, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3117,7 +3117,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.4298401, y: 1}
+    m_SensorSize: {x: 1.5062166, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3954,7 +3954,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.4298401, y: 1}
+    m_SensorSize: {x: 1.5062166, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -6099,7 +6099,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.4298401, y: 1}
+    m_SensorSize: {x: 1.5062166, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -7652,7 +7652,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.4298401, y: 1}
+    m_SensorSize: {x: 1.5062166, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -8951,7 +8951,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.4298401, y: 1}
+    m_SensorSize: {x: 1.5062166, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -10331,7 +10331,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.4298401, y: 1}
+    m_SensorSize: {x: 1.5062166, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -10531,7 +10531,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.4298401, y: 1}
+    m_SensorSize: {x: 1.5062166, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -10959,7 +10959,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.4298401, y: 1}
+    m_SensorSize: {x: 1.5062166, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -11109,7 +11109,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.4298401, y: 1}
+    m_SensorSize: {x: 1.5062166, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -12172,7 +12172,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.4298401, y: 1}
+    m_SensorSize: {x: 1.5062166, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -17982,7 +17982,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.4298401, y: 1}
+    m_SensorSize: {x: 1.5062166, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -18144,7 +18144,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.4298401, y: 1}
+    m_SensorSize: {x: 1.5062166, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -19600,7 +19600,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.4298401, y: 1}
+    m_SensorSize: {x: 1.5062166, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -19923,7 +19923,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.4298401, y: 1}
+    m_SensorSize: {x: 1.5062166, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -20220,6 +20220,30 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 8071812335791535223}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8014121271279965110}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 6438018260590922531}
           m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
           m_MethodName: StartAnim
@@ -20264,6 +20288,30 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 8071812335791535223}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8014121271279965110}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     OnEnd:
       m_PersistentCalls:
         m_Calls: []
@@ -20272,6 +20320,30 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 6438018260590922530}
+          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
+          m_MethodName: StopAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8071812335791535224}
+          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
+          m_MethodName: StopAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8014121271279965112}
           m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
           m_MethodName: StopAnim
           m_Mode: 3
@@ -20891,6 +20963,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 8071812335791535224}
+          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
+          m_MethodName: StopAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 6886713078011628620}
           m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
           m_MethodName: StartAnim
@@ -20934,6 +21018,21 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 8071812335791535223}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnEnd:
+      m_PersistentCalls:
+        m_Calls:
         - m_Target: {fileID: 1318229673}
           m_TargetAssemblyTypeName: ObjectAppear, Assembly-CSharp
           m_MethodName: MakeObjectAppear
@@ -20946,14 +21045,35 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    OnEnd:
-      m_PersistentCalls:
-        m_Calls: []
   - Instruction: Der giftige, nach Klebstoff riechende Vorlauf muss nun abgegossen
       werden
     OnStart:
       m_PersistentCalls:
         m_Calls:
+        - m_Target: {fileID: 8071812335791535224}
+          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
+          m_MethodName: StopAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8014121271279965112}
+          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
+          m_MethodName: StopAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 1292613337}
           m_TargetAssemblyTypeName: ObjectDisappear, Assembly-CSharp
           m_MethodName: MakeObjectDisappear
@@ -20998,6 +21118,30 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 8071812335791535223}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8014121271279965110}
+          m_TargetAssemblyTypeName: StartAnimation, Assembly-CSharp
+          m_MethodName: StartAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 1292613332}
           m_TargetAssemblyTypeName: ObjectAppear, Assembly-CSharp
           m_MethodName: MakeObjectAppear
@@ -21017,7 +21161,31 @@ MonoBehaviour:
       werden"
     OnStart:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 8071812335791535224}
+          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
+          m_MethodName: StopAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8014121271279965112}
+          m_TargetAssemblyTypeName: StopAnimation, Assembly-CSharp
+          m_MethodName: StopAnim
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     OnEnd:
       m_PersistentCalls:
         m_Calls: []
@@ -25707,6 +25875,9 @@ GameObject:
   - component: {fileID: 2541432774291076356}
   - component: {fileID: 8071812335791535221}
   - component: {fileID: 1655777971932217474}
+  - component: {fileID: 8071812335791535222}
+  - component: {fileID: 8071812335791535223}
+  - component: {fileID: 8071812335791535224}
   m_Layer: 0
   m_Name: MinuteHand
   m_TagString: Untagged
@@ -25782,6 +25953,9 @@ GameObject:
   - component: {fileID: 4706574874081812971}
   - component: {fileID: 8014121271279965109}
   - component: {fileID: 4473429566484571688}
+  - component: {fileID: 8014121271279965111}
+  - component: {fileID: 8014121271279965110}
+  - component: {fileID: 8014121271279965112}
   m_Layer: 0
   m_Name: HourHand
   m_TagString: Untagged
@@ -25942,6 +26116,57 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7803839707846334814}
   m_Mesh: {fileID: 8850715853767628046, guid: 15743c06b393a9143806b92cf8573be6, type: 3}
+--- !u!114 &8014121271279965110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7803839707846334814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animState:
+  - HourHandMove
+  - HourHandMoveFinal
+  - Idle
+--- !u!95 &8014121271279965111
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7803839707846334814}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d78dd5264567db24fb72369107535e42, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8014121271279965112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7803839707846334814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animState:
+  - HourHandMove
+  - HourHandMoveFinal
 --- !u!23 &8044854758074405425
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26091,6 +26316,59 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7489862054197861401}
   m_Mesh: {fileID: -4062740656448335575, guid: 15743c06b393a9143806b92cf8573be6, type: 3}
+--- !u!95 &8071812335791535222
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7489862054197861401}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d06cd2a0b080bda46a879a7678a044f4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8071812335791535223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7489862054197861401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78752517d52f3ad4fac607a9261a1a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animState:
+  - MinuteHandMove
+  - MinuteHandMoveNext
+  - MinuteHandMoveFinal
+  - Idle
+--- !u!114 &8071812335791535224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7489862054197861401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a4c8d234b7f10c4e929f9a3a64326c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animState:
+  - MinuteHandMove
+  - MinuteHandMoveNext
+  - MinuteHandMoveFinal
 --- !u!33 &8103695658343725156
 MeshFilter:
   m_ObjectHideFlags: 0

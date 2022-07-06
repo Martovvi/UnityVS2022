@@ -20641,10 +20641,34 @@ MonoBehaviour:
     Instruction: "Lasse den Inhalt im Eimer f\xFCr ein paar Stunden g\xE4ren"
     HelpMsg: "Ein Blick auf die Uhr k\xF6nnte hier helfen"
     ErrorMsg: 
-    Duration: 0
+    Duration: 3
     OnStart:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 8071812335791535222}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Move MinuteHand
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8014121271279965110}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Move HourHand
+            m_BoolArgument: 0
+          m_CallState: 2
     OnEnd:
       m_PersistentCalls:
         m_Calls: []
@@ -20976,8 +21000,23 @@ MonoBehaviour:
     Instruction: Warte einige Minuten
     HelpMsg: "Ein Blick auf die Uhr k\xF6nnte hier helfen"
     ErrorMsg: 
-    Duration: 0
+    Duration: 1
     OnStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8071812335791535222}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Move Next
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnEnd:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1318229673}
@@ -20992,9 +21031,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    OnEnd:
-      m_PersistentCalls:
-        m_Calls: []
   - Interactable: {fileID: 6886713078011628611}
     Instruction: "Gie\xDFe den Vorlauf ab (Achtung: giftig)"
     HelpMsg: "Die Schale enth\xE4lt eine giftige Fl\xFCssigkeit mit bei\xDFendem
@@ -21023,8 +21059,35 @@ MonoBehaviour:
     Instruction: "Warte erneut f\xFCr ein paar Stunden"
     HelpMsg: "Ein Blick auf die Uhr k\xF6nnte hier helfen"
     ErrorMsg: 
-    Duration: 0
+    Duration: 2
     OnStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8071812335791535222}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Move Final
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8014121271279965110}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Move Final
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnEnd:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1292613332}
@@ -21039,9 +21102,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    OnEnd:
-      m_PersistentCalls:
-        m_Calls: []
   - Interactable: {fileID: 6886713078011628611}
     Instruction: Entnehme den Schnaps
     HelpMsg: "Der Schnaps in der Schale ist fertig zum Genie\xDFen"
@@ -23594,6 +23654,7 @@ GameObject:
   - component: {fileID: 2541432774291076356}
   - component: {fileID: 8071812335791535221}
   - component: {fileID: 1655777971932217474}
+  - component: {fileID: 8071812335791535222}
   m_Layer: 0
   m_Name: MinuteHand
   m_TagString: Untagged
@@ -23669,6 +23730,7 @@ GameObject:
   - component: {fileID: 4706574874081812971}
   - component: {fileID: 8014121271279965109}
   - component: {fileID: 4473429566484571688}
+  - component: {fileID: 8014121271279965110}
   m_Layer: 0
   m_Name: HourHand
   m_TagString: Untagged
@@ -23829,6 +23891,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7803839707846334814}
   m_Mesh: {fileID: 8850715853767628046, guid: 15743c06b393a9143806b92cf8573be6, type: 3}
+--- !u!95 &8014121271279965110
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7803839707846334814}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7d95d27c0507b3340bd2675392031dc6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!23 &8044854758074405425
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23974,6 +24056,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7489862054197861401}
   m_Mesh: {fileID: -4062740656448335575, guid: 15743c06b393a9143806b92cf8573be6, type: 3}
+--- !u!95 &8071812335791535222
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7489862054197861401}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4838f678ed99fb5449758f02ae85d701, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!33 &8103695658343725156
 MeshFilter:
   m_ObjectHideFlags: 0
